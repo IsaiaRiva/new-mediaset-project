@@ -81,7 +81,7 @@ export default class CollectionTab extends BaseTab {
 
     if (!this.initialized) {
       const navbar = $('<nav/>')
-        .addClass('navbar navbar-expand-lg navbar-light bg-light')
+        .addClass('navbar navbar-expand-lg navbar-light bg-light d-none')
         .append(this.createTabToggle())
         .append(this.createTabItems());
       this.tabContent.append(navbar);

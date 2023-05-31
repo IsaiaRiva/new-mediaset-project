@@ -1,0 +1,945 @@
+{
+	"asset": {
+		"uuid": "b420d7fc-ac0a-fda0-945f-3c5bc7c8b992",
+		"bucket": "so0050-02b8ba4503df-255655562678-eu-west-1-proxy",
+		"videoKey": "b420d7fc-ac0a-fda0-945f-3c5bc7c8b992/TG5_27042023/transcode/aiml/TG5_27042023.mp4",
+		"framePrefix": "b420d7fc-ac0a-fda0-945f-3c5bc7c8b992/TG5_27042023/transcode/frameCapture/"
+	},
+	"pauseBreaks": [
+		{
+			"pauseStart": 132140,
+			"pauseEnd": 134650,
+			"pauseDuration": 2510,
+			"shots": [
+				{
+					"index": 47,
+					"timestampStart": 127200,
+					"timestampEnd": 132200,
+					"smpteStart": "00:02:07:05",
+					"smpteEnd": "00:02:12:05",
+					"frameStart": 3180,
+					"frameEnd": 3305,
+					"breakType": "SEGMENT_END",
+					"breakTimestamp": 132200,
+					"loudness": { "timestamp": 132000, "momentary": -10.72 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"sharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"contrast": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0, "mean": 0, "max": 0, "min": 0 }
+					},
+					"weight": 0.0893
+				},
+				{
+					"index": 48,
+					"timestampStart": 132400,
+					"timestampEnd": 132920,
+					"smpteStart": "00:02:12:10",
+					"smpteEnd": "00:02:12:23",
+					"frameStart": 3310,
+					"frameEnd": 3323,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 132400,
+					"loudness": { "timestamp": 132000, "momentary": -10.72 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"sharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"contrast": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0, "mean": 0, "max": 0, "min": 0 }
+					},
+					"weight": 0.0893
+				},
+				{
+					"index": 49,
+					"timestampStart": 133000,
+					"timestampEnd": 134440,
+					"smpteStart": "00:02:13:00",
+					"smpteEnd": "00:02:14:11",
+					"frameStart": 3325,
+					"frameEnd": 3361,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 133000,
+					"loudness": { "timestamp": 133000, "momentary": -21.36 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"sharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"contrast": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0, "mean": 0, "max": 0, "min": 0 }
+					},
+					"weight": 0.178
+				},
+				{
+					"index": 50,
+					"timestampStart": 134520,
+					"timestampEnd": 170920,
+					"smpteStart": "00:02:14:13",
+					"smpteEnd": "00:02:50:23",
+					"frameStart": 3363,
+					"frameEnd": 4273,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 134520,
+					"loudness": { "timestamp": 134000, "momentary": -21.36 },
+					"distances": {
+						"color": { "avg": 0.2457, "mean": 0, "max": 0.451, "min": 0.1274 },
+						"fgColor": { "avg": 0.1555, "mean": 0, "max": 0.1555, "min": 0.1555 },
+						"bgColor": { "avg": 0.323, "mean": 0, "max": 0.4788, "min": 0.0902 },
+						"brightness": { "avg": 0.0913, "mean": 0, "max": 0.1868, "min": 0.0124 },
+						"sharpness": { "avg": 0.0624, "mean": 0, "max": 0.119, "min": 0.0045 },
+						"contrast": { "avg": 0.0747, "mean": 0, "max": 0.1188, "min": 0.0407 },
+						"fgBrightness": {
+							"avg": 0.2493,
+							"mean": 0,
+							"max": 0.2788,
+							"min": 0.2235
+						},
+						"fgSharpness": { "avg": 0.006, "mean": 0, "max": 0.018, "min": 0.0001 },
+						"bgBrightness": {
+							"avg": 0.0629,
+							"mean": 0,
+							"max": 0.164,
+							"min": 0.0015
+						},
+						"bgSharpness": {
+							"avg": 0.5282,
+							"mean": 1,
+							"max": 0.6241,
+							"min": 0.3405
+						},
+						"hash": { "avg": 0.9104, "mean": 1, "max": 1, "min": 0.8182 }
+					},
+					"weight": 0.2558
+				}
+			]
+		},
+		{
+			"pauseStart": 789490,
+			"pauseEnd": 791750,
+			"pauseDuration": 2260,
+			"shots": [
+				{
+					"index": 181,
+					"timestampStart": 785080,
+					"timestampEnd": 790200,
+					"smpteStart": "00:13:05:02",
+					"smpteEnd": "00:13:10:05",
+					"frameStart": 19627,
+					"frameEnd": 19755,
+					"breakType": "SEGMENT_END",
+					"breakTimestamp": 790200,
+					"loudness": { "timestamp": 790000, "momentary": -13.725 },
+					"distances": {
+						"color": { "avg": 0.1214, "mean": 0, "max": 0.1517, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0.1525, "mean": 0, "max": 0.1527, "min": 0.1517 },
+						"brightness": { "avg": 0.0084, "mean": 0, "max": 0.0164, "min": 0.0004 },
+						"sharpness": { "avg": 0.1028, "mean": 0, "max": 0.2095, "min": 0.0021 },
+						"contrast": { "avg": 0.2496, "mean": 0, "max": 0.3272, "min": 0.1429 },
+						"fgBrightness": {
+							"avg": 0.0685,
+							"mean": 0,
+							"max": 0.0699,
+							"min": 0.0658
+						},
+						"fgSharpness": { "avg": 0.454, "mean": 0, "max": 0.4596, "min": 0.4479 },
+						"bgBrightness": {
+							"avg": 0.0162,
+							"mean": 0,
+							"max": 0.0241,
+							"min": 0.008
+						},
+						"bgSharpness": {
+							"avg": 0.0607,
+							"mean": 0,
+							"max": 0.1058,
+							"min": 0.0164
+						},
+						"hash": { "avg": 0.7955, "mean": 1, "max": 0.9091, "min": 0.7273 }
+					},
+					"weight": 0.1781
+				},
+				{
+					"index": 182,
+					"timestampStart": 790240,
+					"timestampEnd": 794400,
+					"smpteStart": "00:13:10:06",
+					"smpteEnd": "00:13:14:10",
+					"frameStart": 19756,
+					"frameEnd": 19860,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 790240,
+					"loudness": { "timestamp": 790000, "momentary": -13.725 },
+					"distances": {
+						"color": { "avg": 0.1214, "mean": 0, "max": 0.1517, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0.1525, "mean": 0, "max": 0.1527, "min": 0.1517 },
+						"brightness": { "avg": 0.0084, "mean": 0, "max": 0.0164, "min": 0.0004 },
+						"sharpness": { "avg": 0.1028, "mean": 0, "max": 0.2095, "min": 0.0021 },
+						"contrast": { "avg": 0.2496, "mean": 0, "max": 0.3272, "min": 0.1429 },
+						"fgBrightness": {
+							"avg": 0.0685,
+							"mean": 0,
+							"max": 0.0699,
+							"min": 0.0658
+						},
+						"fgSharpness": { "avg": 0.454, "mean": 0, "max": 0.4596, "min": 0.4479 },
+						"bgBrightness": {
+							"avg": 0.0162,
+							"mean": 0,
+							"max": 0.0241,
+							"min": 0.008
+						},
+						"bgSharpness": {
+							"avg": 0.0607,
+							"mean": 0,
+							"max": 0.1058,
+							"min": 0.0164
+						},
+						"hash": { "avg": 0.7955, "mean": 1, "max": 0.9091, "min": 0.7273 }
+					},
+					"weight": 0.1781
+				}
+			]
+		},
+		{
+			"pauseStart": 1573260,
+			"pauseEnd": 1583010,
+			"pauseDuration": 9750,
+			"shots": [
+				{
+					"index": 345,
+					"timestampStart": 1570360,
+					"timestampEnd": 1573920,
+					"smpteStart": "00:26:10:09",
+					"smpteEnd": "00:26:13:23",
+					"frameStart": 39259,
+					"frameEnd": 39348,
+					"breakType": "SEGMENT_END",
+					"breakTimestamp": 1573920,
+					"loudness": { "timestamp": 1573000, "momentary": -12.68 },
+					"distances": {
+						"color": { "avg": 0.1849, "mean": 0, "max": 0.2744, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.148, "mean": 0, "max": 0.1674, "min": 0.1304 },
+						"sharpness": { "avg": 0.456, "mean": 0, "max": 0.4651, "min": 0.447 },
+						"contrast": { "avg": 0.3407, "mean": 0, "max": 0.3499, "min": 0.3319 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0.9545, "mean": 1, "max": 1, "min": 0.9091 }
+					},
+					"weight": 0.1434
+				},
+				{
+					"index": 346,
+					"timestampStart": 1573960,
+					"timestampEnd": 1575760,
+					"smpteStart": "00:26:13:24",
+					"smpteEnd": "00:26:15:19",
+					"frameStart": 39349,
+					"frameEnd": 39394,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1573960,
+					"loudness": { "timestamp": 1573000, "momentary": -12.68 },
+					"distances": {
+						"color": { "avg": 0.1849, "mean": 0, "max": 0.2744, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.148, "mean": 0, "max": 0.1674, "min": 0.1304 },
+						"sharpness": { "avg": 0.456, "mean": 0, "max": 0.4651, "min": 0.447 },
+						"contrast": { "avg": 0.3407, "mean": 0, "max": 0.3499, "min": 0.3319 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0.9545, "mean": 1, "max": 1, "min": 0.9091 }
+					},
+					"weight": 0.1434
+				},
+				{
+					"index": 347,
+					"timestampStart": 1575800,
+					"timestampEnd": 1575840,
+					"smpteStart": "00:26:15:20",
+					"smpteEnd": "00:26:15:21",
+					"frameStart": 39395,
+					"frameEnd": 39396,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1575800,
+					"loudness": { "timestamp": 1575000, "momentary": -12.68 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"sharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"contrast": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0, "mean": 0, "max": 0, "min": 0 }
+					},
+					"weight": 0.1057
+				},
+				{
+					"index": 348,
+					"timestampStart": 1575920,
+					"timestampEnd": 1576640,
+					"smpteStart": "00:26:15:23",
+					"smpteEnd": "00:26:16:16",
+					"frameStart": 39398,
+					"frameEnd": 39416,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1575920,
+					"loudness": { "timestamp": 1575000, "momentary": -12.68 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"sharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"contrast": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0, "mean": 0, "max": 0, "min": 0 }
+					},
+					"weight": 0.1057
+				},
+				{
+					"index": 349,
+					"timestampStart": 1576680,
+					"timestampEnd": 1577560,
+					"smpteStart": "00:26:16:17",
+					"smpteEnd": "00:26:17:14",
+					"frameStart": 39417,
+					"frameEnd": 39439,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1576680,
+					"loudness": { "timestamp": 1576000, "momentary": -11.493 },
+					"distances": {
+						"color": { "avg": 0.3356, "mean": 0.3356, "max": 0.3356, "min": 0.3356 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.1511,
+							"mean": 0.15110000000000007,
+							"max": 0.1511,
+							"min": 0.1511
+						},
+						"sharpness": {
+							"avg": 0.2288,
+							"mean": 0.22879999999999995,
+							"max": 0.2288,
+							"min": 0.2288
+						},
+						"contrast": {
+							"avg": 0.0083,
+							"mean": 0.008299999999999983,
+							"max": 0.0083,
+							"min": 0.0083
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 1, "mean": 1, "max": 1, "min": 1 }
+					},
+					"weight": 0.1175
+				},
+				{
+					"index": 350,
+					"timestampStart": 1577680,
+					"timestampEnd": 1578240,
+					"smpteStart": "00:26:17:17",
+					"smpteEnd": "00:26:18:06",
+					"frameStart": 39442,
+					"frameEnd": 39456,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1577680,
+					"loudness": { "timestamp": 1577000, "momentary": -11.493 },
+					"distances": {
+						"color": { "avg": 0.6627, "mean": 0.6627, "max": 0.6627, "min": 0.6627 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.0714,
+							"mean": 0.0714,
+							"max": 0.0714,
+							"min": 0.0714
+						},
+						"sharpness": {
+							"avg": 0.0461,
+							"mean": 0.046099999999999995,
+							"max": 0.0461,
+							"min": 0.0461
+						},
+						"contrast": {
+							"avg": 0.0004,
+							"mean": 0.0004000000000000625,
+							"max": 0.0004,
+							"min": 0.0004
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": {
+							"avg": 0.9091,
+							"mean": 0.9090909090909091,
+							"max": 0.9091,
+							"min": 0.9091
+						}
+					},
+					"weight": 0.1374
+				},
+				{
+					"index": 351,
+					"timestampStart": 1578280,
+					"timestampEnd": 1579000,
+					"smpteStart": "00:26:18:07",
+					"smpteEnd": "00:26:19:00",
+					"frameStart": 39457,
+					"frameEnd": 39475,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1578280,
+					"loudness": { "timestamp": 1578000, "momentary": -11.493 },
+					"distances": {
+						"color": { "avg": 0.2744, "mean": 0.2744, "max": 0.2744, "min": 0.2744 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.0034,
+							"mean": 0.003400000000000034,
+							"max": 0.0034,
+							"min": 0.0034
+						},
+						"sharpness": {
+							"avg": 0.1347,
+							"mean": 0.1347,
+							"max": 0.1347,
+							"min": 0.1347
+						},
+						"contrast": {
+							"avg": 0.0104,
+							"mean": 0.01039999999999992,
+							"max": 0.0104,
+							"min": 0.0104
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": {
+							"avg": 0.8182,
+							"mean": 0.8181818181818182,
+							"max": 0.8182,
+							"min": 0.8182
+						}
+					},
+					"weight": 0.1448
+				},
+				{
+					"index": 352,
+					"timestampStart": 1579160,
+					"timestampEnd": 1580880,
+					"smpteStart": "00:26:19:04",
+					"smpteEnd": "00:26:20:22",
+					"frameStart": 39479,
+					"frameEnd": 39522,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1579160,
+					"loudness": { "timestamp": 1579000, "momentary": -13.844 },
+					"distances": {
+						"color": { "avg": 0.2744, "mean": 0.2744, "max": 0.2744, "min": 0.2744 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.2824,
+							"mean": 0.28240000000000004,
+							"max": 0.2824,
+							"min": 0.2824
+						},
+						"sharpness": {
+							"avg": 0.1579,
+							"mean": 0.15789999999999998,
+							"max": 0.1579,
+							"min": 0.1579
+						},
+						"contrast": {
+							"avg": 0.0425,
+							"mean": 0.0425,
+							"max": 0.0425,
+							"min": 0.0425
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 1, "mean": 1, "max": 1, "min": 1 }
+					},
+					"weight": 0.1381
+				},
+				{
+					"index": 353,
+					"timestampStart": 1580920,
+					"timestampEnd": 1582960,
+					"smpteStart": "00:26:20:23",
+					"smpteEnd": "00:26:22:24",
+					"frameStart": 39523,
+					"frameEnd": 39574,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1580920,
+					"loudness": { "timestamp": 1580000, "momentary": -13.844 },
+					"distances": {
+						"color": { "avg": 0.133, "mean": 0, "max": 0.2659, "min": 0 },
+						"fgColor": { "avg": 0.5834, "mean": 1, "max": 0.5834, "min": 0.5834 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.0468, "mean": 0, "max": 0.0591, "min": 0.0345 },
+						"sharpness": { "avg": 0.3967, "mean": 0, "max": 0.4005, "min": 0.3928 },
+						"contrast": { "avg": 0.0583, "mean": 0, "max": 0.0732, "min": 0.0434 },
+						"fgBrightness": {
+							"avg": 0.0107,
+							"mean": 0,
+							"max": 0.0108,
+							"min": 0.0105
+						},
+						"fgSharpness": { "avg": 0.095, "mean": 0, "max": 0.1069, "min": 0.0832 },
+						"bgBrightness": {
+							"avg": 0.0474,
+							"mean": 0,
+							"max": 0.0656,
+							"min": 0.0291
+						},
+						"bgSharpness": { "avg": 0.3556, "mean": 0, "max": 0.4521, "min": 0.259 },
+						"hash": { "avg": 0.8182, "mean": 1, "max": 0.9091, "min": 0.7273 }
+					},
+					"weight": 0.1941
+				},
+				{
+					"index": 354,
+					"timestampStart": 1583000,
+					"timestampEnd": 1585920,
+					"smpteStart": "00:26:23:00",
+					"smpteEnd": "00:26:25:23",
+					"frameStart": 39575,
+					"frameEnd": 39648,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1583000,
+					"loudness": { "timestamp": 1583000, "momentary": -13.929 },
+					"distances": {
+						"color": { "avg": 0.213, "mean": 0, "max": 0.2744, "min": 0.1517 },
+						"fgColor": { "avg": 0.257, "mean": 0, "max": 0.257, "min": 0.257 },
+						"bgColor": { "avg": 0.1829, "mean": 0, "max": 0.2744, "min": 0 },
+						"brightness": { "avg": 0.1486, "mean": 0, "max": 0.2725, "min": 0.0558 },
+						"sharpness": { "avg": 0.1238, "mean": 0, "max": 0.3448, "min": 0.0001 },
+						"contrast": { "avg": 0.022, "mean": 0, "max": 0.0512, "min": 0.0032 },
+						"fgBrightness": {
+							"avg": 0.0312,
+							"mean": 0,
+							"max": 0.0596,
+							"min": 0.0107
+						},
+						"fgSharpness": {
+							"avg": 0.1763,
+							"mean": 0,
+							"max": 0.2034,
+							"min": 0.1554
+						},
+						"bgBrightness": {
+							"avg": 0.1167,
+							"mean": 0,
+							"max": 0.2139,
+							"min": 0.0353
+						},
+						"bgSharpness": {
+							"avg": 0.1603,
+							"mean": 0,
+							"max": 0.3626,
+							"min": 0.0217
+						},
+						"hash": { "avg": 0.9545, "mean": 1, "max": 1, "min": 0.9091 }
+					},
+					"weight": 0.1855
+				}
+			]
+		},
+		{
+			"pauseStart": 1754180,
+			"pauseEnd": 1761220,
+			"pauseDuration": 7040,
+			"shots": [
+				{
+					"index": 413,
+					"timestampStart": 1752720,
+					"timestampEnd": 1755800,
+					"smpteStart": "00:29:12:18",
+					"smpteEnd": "00:29:15:20",
+					"frameStart": 43818,
+					"frameEnd": 43895,
+					"breakType": "SEGMENT_END",
+					"breakTimestamp": 1755800,
+					"loudness": { "timestamp": 1755000, "momentary": -13.712 },
+					"distances": {
+						"color": { "avg": 0.2703, "mean": 0, "max": 0.3992, "min": 0.1608 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.0584, "mean": 0, "max": 0.0772, "min": 0.0306 },
+						"sharpness": { "avg": 0.3758, "mean": 0, "max": 0.3846, "min": 0.3635 },
+						"contrast": { "avg": 0.0178, "mean": 0, "max": 0.0261, "min": 0.0034 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0.7879, "mean": 1, "max": 0.8182, "min": 0.7273 }
+					},
+					"weight": 0.1772
+				},
+				{
+					"index": 414,
+					"timestampStart": 1755840,
+					"timestampEnd": 1756680,
+					"smpteStart": "00:29:15:21",
+					"smpteEnd": "00:29:16:17",
+					"frameStart": 43896,
+					"frameEnd": 43917,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1755840,
+					"loudness": { "timestamp": 1755000, "momentary": -13.712 },
+					"distances": {
+						"color": { "avg": 0.2703, "mean": 0, "max": 0.3992, "min": 0.1608 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.0584, "mean": 0, "max": 0.0772, "min": 0.0306 },
+						"sharpness": { "avg": 0.3758, "mean": 0, "max": 0.3846, "min": 0.3635 },
+						"contrast": { "avg": 0.0178, "mean": 0, "max": 0.0261, "min": 0.0034 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 0.7879, "mean": 1, "max": 0.8182, "min": 0.7273 }
+					},
+					"weight": 0.1772
+				},
+				{
+					"index": 415,
+					"timestampStart": 1756760,
+					"timestampEnd": 1757360,
+					"smpteStart": "00:29:16:19",
+					"smpteEnd": "00:29:17:09",
+					"frameStart": 43919,
+					"frameEnd": 43934,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1756760,
+					"loudness": { "timestamp": 1756000, "momentary": -16.995 },
+					"distances": {
+						"color": { "avg": 0.6627, "mean": 0.6627, "max": 0.6627, "min": 0.6627 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.0933,
+							"mean": 0.09329999999999998,
+							"max": 0.0933,
+							"min": 0.0933
+						},
+						"sharpness": {
+							"avg": 0.0896,
+							"mean": 0.08960000000000001,
+							"max": 0.0896,
+							"min": 0.0896
+						},
+						"contrast": {
+							"avg": 0.0069,
+							"mean": 0.006899999999999977,
+							"max": 0.0069,
+							"min": 0.0069
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 1, "mean": 1, "max": 1, "min": 1 }
+					},
+					"weight": 0.1672
+				},
+				{
+					"index": 416,
+					"timestampStart": 1757400,
+					"timestampEnd": 1758120,
+					"smpteStart": "00:29:17:10",
+					"smpteEnd": "00:29:18:03",
+					"frameStart": 43935,
+					"frameEnd": 43953,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1757400,
+					"loudness": { "timestamp": 1757000, "momentary": -16.995 },
+					"distances": {
+						"color": { "avg": 0.2744, "mean": 0.2744, "max": 0.2744, "min": 0.2744 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": {
+							"avg": 0.0092,
+							"mean": 0.009199999999999946,
+							"max": 0.0092,
+							"min": 0.0092
+						},
+						"sharpness": {
+							"avg": 0.0465,
+							"mean": 0.046499999999999986,
+							"max": 0.0465,
+							"min": 0.0465
+						},
+						"contrast": {
+							"avg": 0.0143,
+							"mean": 0.014300000000000068,
+							"max": 0.0143,
+							"min": 0.0143
+						},
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": {
+							"avg": 0.9091,
+							"mean": 0.9090909090909091,
+							"max": 0.9091,
+							"min": 0.9091
+						}
+					},
+					"weight": 0.1701
+				},
+				{
+					"index": 417,
+					"timestampStart": 1758320,
+					"timestampEnd": 1760640,
+					"smpteStart": "00:29:18:08",
+					"smpteEnd": "00:29:20:16",
+					"frameStart": 43958,
+					"frameEnd": 44016,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1758320,
+					"loudness": { "timestamp": 1758000, "momentary": -16.995 },
+					"distances": {
+						"color": { "avg": 0.2744, "mean": 0, "max": 0.2744, "min": 0.2744 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.2706, "mean": 0, "max": 0.2915, "min": 0.2497 },
+						"sharpness": { "avg": 0.2353, "mean": 0, "max": 0.422, "min": 0.0487 },
+						"contrast": { "avg": 0.0469, "mean": 0, "max": 0.0905, "min": 0.0032 },
+						"fgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgBrightness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgSharpness": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"hash": { "avg": 1, "mean": 1, "max": 1, "min": 1 }
+					},
+					"weight": 0.174
+				},
+				{
+					"index": 418,
+					"timestampStart": 1760680,
+					"timestampEnd": 1769000,
+					"smpteStart": "00:29:20:17",
+					"smpteEnd": "00:29:29:00",
+					"frameStart": 44017,
+					"frameEnd": 44225,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1760680,
+					"loudness": { "timestamp": 1760000, "momentary": -15.33 },
+					"distances": {
+						"color": { "avg": 0.7529, "mean": 1, "max": 0.7529, "min": 0.7529 },
+						"fgColor": { "avg": 0.222, "mean": 0, "max": 0.2923, "min": 0.1517 },
+						"bgColor": { "avg": 0.6414, "mean": 1, "max": 0.7529, "min": 0.502 },
+						"brightness": { "avg": 0.4616, "mean": 0, "max": 0.483, "min": 0.4399 },
+						"sharpness": { "avg": 0.1867, "mean": 0, "max": 0.3507, "min": 0.0226 },
+						"contrast": { "avg": 0.1184, "mean": 0, "max": 0.1655, "min": 0.0711 },
+						"fgBrightness": {
+							"avg": 0.1418,
+							"mean": 0,
+							"max": 0.241,
+							"min": 0.0425
+						},
+						"fgSharpness": {
+							"avg": 0.0855,
+							"mean": 0,
+							"max": 0.1325,
+							"min": 0.0385
+						},
+						"bgBrightness": {
+							"avg": 0.4941,
+							"mean": 0,
+							"max": 0.5147,
+							"min": 0.4742
+						},
+						"bgSharpness": {
+							"avg": 0.1348,
+							"mean": 0,
+							"max": 0.2502,
+							"min": 0.0112
+						},
+						"hash": { "avg": 1, "mean": 1, "max": 1, "min": 1 }
+					},
+					"weight": 0.2458
+				}
+			]
+		},
+		{
+			"pauseStart": 1861740,
+			"pauseEnd": 1865400,
+			"pauseDuration": 3660,
+			"shots": [
+				{
+					"index": 469,
+					"timestampStart": 1860480,
+					"timestampEnd": 1862160,
+					"smpteStart": "00:31:00:12",
+					"smpteEnd": "00:31:02:04",
+					"frameStart": 46512,
+					"frameEnd": 46554,
+					"breakType": "SEGMENT_END",
+					"breakTimestamp": 1862160,
+					"loudness": { "timestamp": 1862000, "momentary": -17.01 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.0989, "mean": 0, "max": 0.0992, "min": 0.0985 },
+						"sharpness": { "avg": 0.021, "mean": 0, "max": 0.0218, "min": 0.0202 },
+						"contrast": { "avg": 0.153, "mean": 0, "max": 0.154, "min": 0.152 },
+						"fgBrightness": {
+							"avg": 0.1439,
+							"mean": 0,
+							"max": 0.1555,
+							"min": 0.1323
+						},
+						"fgSharpness": { "avg": 0.4164, "mean": 0, "max": 0.4308, "min": 0.402 },
+						"bgBrightness": {
+							"avg": 0.1112,
+							"mean": 0,
+							"max": 0.1123,
+							"min": 0.1101
+						},
+						"bgSharpness": {
+							"avg": 0.0994,
+							"mean": 0,
+							"max": 0.1011,
+							"min": 0.0977
+						},
+						"hash": { "avg": 0.9091, "mean": 1, "max": 0.9091, "min": 0.9091 }
+					},
+					"weight": 0.1922
+				},
+				{
+					"index": 470,
+					"timestampStart": 1862200,
+					"timestampEnd": 1864840,
+					"smpteStart": "00:31:02:05",
+					"smpteEnd": "00:31:04:21",
+					"frameStart": 46555,
+					"frameEnd": 46621,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1862200,
+					"loudness": { "timestamp": 1862000, "momentary": -17.01 },
+					"distances": {
+						"color": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"fgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"bgColor": { "avg": 0, "mean": 0, "max": 0, "min": 0 },
+						"brightness": { "avg": 0.0989, "mean": 0, "max": 0.0992, "min": 0.0985 },
+						"sharpness": { "avg": 0.021, "mean": 0, "max": 0.0218, "min": 0.0202 },
+						"contrast": { "avg": 0.153, "mean": 0, "max": 0.154, "min": 0.152 },
+						"fgBrightness": {
+							"avg": 0.1439,
+							"mean": 0,
+							"max": 0.1555,
+							"min": 0.1323
+						},
+						"fgSharpness": { "avg": 0.4164, "mean": 0, "max": 0.4308, "min": 0.402 },
+						"bgBrightness": {
+							"avg": 0.1112,
+							"mean": 0,
+							"max": 0.1123,
+							"min": 0.1101
+						},
+						"bgSharpness": {
+							"avg": 0.0994,
+							"mean": 0,
+							"max": 0.1011,
+							"min": 0.0977
+						},
+						"hash": { "avg": 0.9091, "mean": 1, "max": 0.9091, "min": 0.9091 }
+					},
+					"weight": 0.1922
+				},
+				{
+					"index": 471,
+					"timestampStart": 1864880,
+					"timestampEnd": 1868240,
+					"smpteStart": "00:31:04:22",
+					"smpteEnd": "00:31:08:06",
+					"frameStart": 46622,
+					"frameEnd": 46706,
+					"breakType": "SEGMENT_START",
+					"breakTimestamp": 1864880,
+					"loudness": { "timestamp": 1864000, "momentary": -14.125 },
+					"distances": {
+						"color": { "avg": 0.1517, "mean": 0, "max": 0.1517, "min": 0.1517 },
+						"fgColor": { "avg": 0.2744, "mean": 0, "max": 0.2744, "min": 0.2744 },
+						"bgColor": { "avg": 0.1517, "mean": 0, "max": 0.1517, "min": 0.1517 },
+						"brightness": { "avg": 0.0379, "mean": 0, "max": 0.0469, "min": 0.0233 },
+						"sharpness": { "avg": 0.5793, "mean": 1, "max": 0.5828, "min": 0.5771 },
+						"contrast": { "avg": 0.052, "mean": 0, "max": 0.0536, "min": 0.0505 },
+						"fgBrightness": {
+							"avg": 0.2016,
+							"mean": 0,
+							"max": 0.2045,
+							"min": 0.1969
+						},
+						"fgSharpness": {
+							"avg": 0.5373,
+							"mean": 1,
+							"max": 0.5499,
+							"min": 0.5193
+						},
+						"bgBrightness": {
+							"avg": 0.0513,
+							"mean": 0,
+							"max": 0.0625,
+							"min": 0.0345
+						},
+						"bgSharpness": {
+							"avg": 0.5485,
+							"mean": 1,
+							"max": 0.5822,
+							"min": 0.5221
+						},
+						"hash": { "avg": 0.875, "mean": 1, "max": 1, "min": 0.7273 }
+					},
+					"weight": 0.1975
+				}
+			]
+		}
+	]
+}

@@ -215,11 +215,11 @@ export default class AnalysisComponent {
       tabs,
       contents,
     ] = this.createTabsAndContents();
-    const menu = $('<nav/>').addClass('col-2 d-none d-md-block sidebar vh-70')
+    const menu = $('<nav/>').addClass('col-2 d-none d-md-block sidebar')
       .css('min-height', 300)
       .append(tabs);
     const tabContents = $('<div/>').addClass('tab-content')
-      .addClass('col-10 p-0 m-0 vh-70')
+      .addClass('col-10 p-0 m-0')
       .append(contents);
     const container = $('<div/>').addClass('col-12 p-0 m-0')
       .append($('<div/>').addClass('row no-gutters')

@@ -13,6 +13,7 @@ import TechnicalComponentHelper from './components/technicalComponentHelper.js';
 import AnalysisComponent from './components/analysisComponent.js';
 import SnapshotComponent from './components/snapshotComponent.js';
 import BaseSlideComponent from '../../../shared/baseSlideComponent.js';
+import { fgTabs } from '../../../fincons/ui/components/tabs.js';
 
 const {
   Messages: {
@@ -116,6 +117,8 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
       behavior: 'smooth',
     });
 
+    fgTabs()
+
     return super.show();
   }
 
@@ -140,7 +143,7 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
       .addClass('row no-gutters');
 
     const previewContainer = $('<div/>')
-      .addClass('col-6 p-0 overflow-auto vh-70x')
+      .addClass('col-6 p-0 overflow-auto')
       .addClass(BKGD_PREVIEW)
       .attr(DATA_VIEW, VIEW_PREVIEW);
     container.append(previewContainer);
@@ -149,7 +152,7 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
     previewContainer.append(preview);
 
     const techviewContainer = $('<div/>')
-      .addClass('col-6 p-0 m-0 overflow-auto vh-70x')
+      .addClass('col-6 p-0 m-0 overflow-auto ')
       .addClass(BKGD_TECHVIEW)
       .attr(DATA_VIEW, VIEW_TECH);
     container.append(techviewContainer);
@@ -158,10 +161,14 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
     techviewContainer.append(techview);
 
     const analysisContainer = $('<div/>')
-      .addClass('col-12 p-0 m-0 overflow-auto')
+      .addClass('col-12 p-0 m-0 overflow-auto statistics-sec')
       .addClass(BKGD_ANALYSISVIEW)
       .attr(DATA_VIEW, VIEW_ANALYSIS);
     container.append(analysisContainer);
+ 
+    const useCasesContainer = $('<div/>')
+      .addClass('col-12 p-0 m-0 overflow-auto use-cases-container d-none');
+    container.append(useCasesContainer);
 
     const controls = this.createAnalysisView();
     analysisContainer.append(controls);
@@ -174,7 +181,7 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
 
   createPreview() {
     const preview = $('<div/>')
-      .addClass('col-12 p-0 m-0')
+      .addClass('col-12 p-0 m-0 player-container position-relative')
       .append(this.previewComponent.container);
 
     let controls;

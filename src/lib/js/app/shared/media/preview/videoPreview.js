@@ -1,6 +1,7 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
 
+import { VS } from '../../../fincons/classes/video-state.js';
 import AppUtils from '../../appUtils.js';
 import BasePreview from './basePreview.js';
 
@@ -9,444 +10,485 @@ const TRACK_METADATA = 'metadata';
 const TRACK_CHAPTERS = 'chapters';
 
 export default class VideoPreview extends BasePreview {
-  constructor(media, optionalSearchResults) {
-    super(media, optionalSearchResults);
-    const randomId = AppUtils.randomHexstring();
-    this.$ids = {
-      ...this.$ids,
-      player: `vjs-${randomId}`,
-    };
-    this.$player = undefined;
-    this.$subtitleView = $('<div/>')
-      .addClass('lead');
-    this.$trackCached = {};
-    this.$proxyBucket = undefined;
-    this.$mediaType = 'video/mp4';
-    this.$canvasView = $('<div/>')
-      .attr('id', `canvas-${randomId}`);
-  }
+	constructor(media, optionalSearchResults) {
+		super(media, optionalSearchResults);
+		const randomId = AppUtils.randomHexstring();
+		this.$ids = {
+			...this.$ids,
+			player: `vjs-${randomId}`,
+		};
+		this.$player = undefined;
+		this.$subtitleView = $('<div/>').addClass('lead');
+		this.$trackCached = {};
+		this.$proxyBucket = undefined;
+		this.$mediaType = 'video/mp4';
+		this.$canvasView = $('<div/>').attr('id', `canvas-${randomId}`);
 
-  static get Events() {
-    return {
-      Track: {
-        Loaded: 'v:preview:track:loaded',
-      },
-    };
-  }
+		VS.setPlayer(this);
+	}
 
-  static get Constants() {
-    return {
-      Subtitle: 'subtitle',
-    };
-  }
+	static get Events() {
+		return {
+			Track: {
+				Loaded: 'v:preview:track:loaded',
+			},
+		};
+	}
 
-  get player() {
-    return this.$player;
-  }
+	static get Constants() {
+		return {
+			Subtitle: 'subtitle',
+		};
+	}
 
-  set player(val) {
-    this.$player = val;
-  }
+	get player() {
+		return this.$player;
+	}
 
-  get subtitleView() {
-    return this.$subtitleView;
-  }
+	set player(val) {
+		this.$player = val;
+	}
 
-  set subtitleView(val) {
-    this.$subtitleView = val;
-  }
+	get subtitleView() {
+		return this.$subtitleView;
+	}
 
-  get canvasView() {
-    return this.$canvasView;
-  }
+	set subtitleView(val) {
+		this.$subtitleView = val;
+	}
 
-  set canvasView(val) {
-    this.$canvasView = val;
-  }
+	get canvasView() {
+		return this.$canvasView;
+	}
 
-  get trackCached() {
-    return this.$trackCached;
-  }
+	set canvasView(val) {
+		this.$canvasView = val;
+	}
 
-  set trackCached(val) {
-    this.$trackCached = val;
-  }
+	get trackCached() {
+		return this.$trackCached;
+	}
 
-  get proxyBucket() {
-    if (!this.$proxyBucket) {
-      this.$proxyBucket = this.media.getProxyBucket();
-    }
-    return this.$proxyBucket;
-  }
+	set trackCached(val) {
+		this.$trackCached = val;
+	}
 
-  set proxyBucket(val) {
-    this.$proxyBucket = val;
-  }
+	get proxyBucket() {
+		if (!this.$proxyBucket) {
+			this.$proxyBucket = this.media.getProxyBucket();
+		}
+		return this.$proxyBucket;
+	}
 
-  get mediaType() {
-    return this.$mediaType;
-  }
+	set proxyBucket(val) {
+		this.$proxyBucket = val;
+	}
 
-  getSubtitleView() {
-    return this.subtitleView;
-  }
+	get mediaType() {
+		return this.$mediaType;
+	}
 
-  getVideoPlayer() {
-    return this.player;
-  }
+	getSubtitleView() {
+		return this.subtitleView;
+	}
 
-  getView() {
-    return (this.player)
-      ? $('video', this.player.el())
-      : undefined;
-  }
+	getVideoPlayer() {
+		return this.player;
+	}
 
-  getCanvasView() {
-    return this.$canvasView;
-  }
+	getView() {
+		return this.player ? $('video', this.player.el()) : undefined;
+	}
 
-  appendSubtitleViewTo(parent) {
-    parent.append(this.subtitleView);
-    return this;
-  }
+	getCanvasView() {
+		return this.$canvasView;
+	}
 
-  async getProxyMedia() {
-    return this.media.getProxyVideo();
-  }
+	appendSubtitleViewTo(parent) {
+		parent.append(this.subtitleView);
+		return this;
+	}
 
-  async load() {
-    await this.unload();
+	async getProxyMedia() {
+		return this.media.getProxyVideo();
+	}
 
-    const container = this.container;
+	async load() {
+		await this.unload();
 
-    /* video element */
-    const videoId = this.ids.player;
-    const video = $('<video/>')
-      .addClass('video-js vjs-fluid w-100')
-      .attr('id', videoId)
-      .attr('controls', 'controls')
-      .attr('preload', 'metadata')
-      .attr('crossorigin', 'anonymous');
-    container.append(video);
+		const container = this.container;
 
-    video.ready(async () => {
-      const [
-        src,
-        poster,
-        mediainfo,
-      ] = await Promise.all([
-        this.getProxyMedia(),
-        this.media.getThumbnail(),
-        this.media.loadMediaInfo(),
-      ]);
-      video.attr('poster', poster);
+		/* video element */
+		const videoId = this.ids.player;
+		const video = $('<video/>')
+			.addClass('video-js vjs-fluid w-100')
+			.attr('id', videoId)
+			.attr('controls', 'controls')
+			.attr('preload', 'metadata')
+			.attr('crossorigin', 'anonymous');
+		container.append(video);
 
-      const dimension = this.media.getVideoDimension();
+		video.ready(async () => {
+			const [src, poster, mediainfo] = await Promise.all([
+				this.getProxyMedia(),
+				this.media.getThumbnail(),
+				this.media.loadMediaInfo(),
+			]);
+			video.attr('poster', poster);
 
-      /* workaround: set aspect raio to 16:9 for portrait mode video */
-      const videoParams = {
-        textTrackDisplay: {
-          allowMultipleShowingTracks: true,
-        },
-        aspectRatio: (dimension.height > dimension.width)
-          ? '16:9'
-          : undefined,
-        autoplay: true,
-      };
+			const dimension = this.media.getVideoDimension();
 
-      const player = videojs(videoId, videoParams);
-      player.markers({
-        markers: [],
-      });
+			/* workaround: set aspect raio to 16:9 for portrait mode video */
+			const videoParams = {
+				textTrackDisplay: {
+					allowMultipleShowingTracks: true,
+				},
+				aspectRatio: dimension.height > dimension.width ? '16:9' : undefined,
+				autoplay: true,
+			};
 
-      player.src({
-        type: this.mediaType,
-        src,
-      });
+			const player = videojs(videoId, videoParams);
+			player.markers({
+				markers: [],
+			});
 
-      player.ready(async () => {
-        player.volume(0.5);
+			player.src({
+				type: this.mediaType,
+				src,
+			});
 
-        const trancribe = this.media.getTranscribeResults() || {};
-        if (trancribe.vtt) {
-          this.trackRegister(
-            VideoPreview.Constants.Subtitle,
-            trancribe.vtt,
-            TRACK_SUBTITLES,
-            trancribe.languageCode || 'en'
-          );
-          await this.trackToggle(VideoPreview.Constants.Subtitle, true);
-        }
+			player.ready(async () => {
+				player.volume(0.5);
 
-        player.on('play', () =>
-          this.canvasView.children()
-            .remove());
-      });
+				const trancribe = this.media.getTranscribeResults() || {};
+				if (trancribe.vtt) {
+					this.trackRegister(
+						VideoPreview.Constants.Subtitle,
+						trancribe.vtt,
+						TRACK_SUBTITLES,
+						trancribe.languageCode || 'en'
+					);
+					await this.trackToggle(VideoPreview.Constants.Subtitle, true);
+				}
 
-      player.load();
-      this.player = player;
+				player.on('play', () => this.canvasView.children().remove());
+			});
 
-      /* auto pause when dom is no longer visible */
-      this.createObserver(video, player);
-    });
+			player.load();
+			this.player = player;
 
-    /* overlay canvas view */
-    container.append(this.canvasView);
+			/* auto pause when dom is no longer visible */
+			this.createObserver(video, player);
+		});
 
-    return super.load();
-  }
+		/* overlay canvas view */
+		container.append(this.canvasView);
 
-  async unload() {
-    if (this.player) {
-      /* store marker plugin for re-initialization */
-      this.player.dispose();
-    }
-    this.player = undefined;
-    this.subtitleView.children().remove();
-    this.canvasView.children().remove();
-    return super.unload();
-  }
+		return super.load();
+	}
 
-  async play() {
-    if (this.player) {
-      this.canvasView.children().remove();
-      this.player.play();
-    }
-    return this;
-  }
+	async unload() {
+		if (this.player) {
+			/* store marker plugin for re-initialization */
+			this.player.dispose();
+		}
+		this.player = undefined;
+		this.subtitleView.children().remove();
+		this.canvasView.children().remove();
+		return super.unload();
+	}
 
-  async pause() {
-    if (this.player) {
-      this.player.pause();
-    }
-    return this;
-  }
+	async play() {
+		if (this.player) {
+			this.canvasView.children().remove();
+			this.player.play();
+		}
+		return this;
+	}
 
-  async seek(time) {
-    if (this.player) {
-      this.player.currentTime(time);
-    }
-    return this;
-  }
+	async pause() {
+		if (this.player) {
+			this.player.pause();
+		}
+		return this;
+	}
 
-  getCurrentTime() {
-    return (this.player)
-      ? Math.floor((this.player.currentTime() * 1000) + 0.5)
-      : undefined;
-  }
+	async seek(time) {
+		if (this.player) {
+			this.player.currentTime(time);
+		}
+		return this;
+	}
 
-  trackIsSub(trackOrString) {
-    return (typeof trackOrString === 'string')
-      ? trackOrString === VideoPreview.Constants.Subtitle
-      : (trackOrString || {}).label === VideoPreview.Constants.Subtitle;
-  }
+	getCurrentTime() {
+		return this.player
+			? Math.floor(this.player.currentTime() * 1000 + 0.5)
+			: undefined;
+	}
 
-  trackIsEnabled(label) {
-    if (this.player) {
-      const tracks = this.player.remoteTextTracks();
-      for (let i = 0; i < tracks.length; i++) {
-        if (tracks[i].label === label) {
-          return tracks[i].mode === 'showing';
-        }
-      }
-    }
-    return false;
-  }
+	trackIsSub(trackOrString) {
+		return typeof trackOrString === 'string'
+			? trackOrString === VideoPreview.Constants.Subtitle
+			: (trackOrString || {}).label === VideoPreview.Constants.Subtitle;
+	}
 
-  trackRegister(
-    label,
-    key,
-    kind = TRACK_METADATA,
-    language = 'en'
-  ) {
-    this.trackCached[label] = {
-      key,
-      language,
-      kind,
-      loaded: false,
-    };
-    return this;
-  }
+	trackIsEnabled(label) {
+		if (this.player) {
+			const tracks = this.player.remoteTextTracks();
+			for (let i = 0; i < tracks.length; i++) {
+				if (tracks[i].label === label) {
+					return tracks[i].mode === 'showing';
+				}
+			}
+		}
+		return false;
+	}
 
-  trackUnregister(label) {
-    if (this.trackCached[label]) {
-      this.removeTrackByLabel(label);
-      if (this.trackCached[label].key.indexOf('blob') === 0) {
-        URL.revokeObjectURL(this.trackCached[label].key);
-      }
-      delete this.trackCached[label];
-    }
-    return this;
-  }
+	trackRegister(label, key, kind = TRACK_METADATA, language = 'en') {
+		this.trackCached[label] = {
+			key,
+			language,
+			kind,
+			loaded: false,
+		};
+		return this;
+	}
 
-  async trackLoad(label) {
-    if (this.player) {
-      let src;
-      if (this.trackCached[label].key.indexOf('blob') === 0) {
-        src = this.trackCached[label].key;
-      } else {
-        src = await this.media.getUrl(this.proxyBucket, this.trackCached[label].key);
-      }
-      const track = this.player.addRemoteTextTrack({
-        kind: this.trackCached[label].kind,
-        language: this.trackCached[label].language,
-        label,
-        src,
-      }, false);
-      track.off('load');
-      track.on('load', (event) => {
-        const selected = event.target.track;
-        selected.mode = 'showing';
-        if (this.trackIsSub(label)) {
-          selected.off('cuechange');
-          selected.on('cuechange', () => this.cueChangedEvent(selected));
-        }
-        this.trackLoadedEvent(selected);
-      });
-    }
-    return this;
-  }
+	trackUnregister(label) {
+		if (this.trackCached[label]) {
+			this.removeTrackByLabel(label);
+			if (this.trackCached[label].key.indexOf('blob') === 0) {
+				URL.revokeObjectURL(this.trackCached[label].key);
+			}
+			delete this.trackCached[label];
+		}
+		return this;
+	}
 
-  async trackToggle(label, on) {
-    if (this.player) {
-      const tracks = this.player.remoteTextTracks();
-      for (let i = 0; i < tracks.length; i++) {
-        if (tracks[i].label === label) {
-          tracks[i].mode = (on) ? 'showing' : 'hidden';
-          return this.markerToggle(tracks[i], on);
-        }
-      }
-    }
-    /* if track is cached but not loaded, load it now */
-    return (on && this.trackCached[label] && !this.trackCached[label].loaded)
-      ? this.trackLoad(label)
-      : this;
-  }
+	async trackLoad(label) {
+		if (this.player) {
+			let src;
+			if (this.trackCached[label].key.indexOf('blob') === 0) {
+				src = this.trackCached[label].key;
+			} else {
+				src = await this.media.getUrl(this.proxyBucket, this.trackCached[label].key);
+			}
+			const track = this.player.addRemoteTextTrack(
+				{
+					kind: this.trackCached[label].kind,
+					language: this.trackCached[label].language,
+					label,
+					src,
+				},
+				false
+			);
+			track.off('load');
+			track.on('load', event => {
+				const selected = event.target.track;
+				selected.mode = 'showing';
+				if (this.trackIsSub(label)) {
+					selected.off('cuechange');
+					selected.on('cuechange', () => this.cueChangedEvent(selected));
+				}
+				this.trackLoadedEvent(selected);
+			});
+		}
+		return this;
+	}
 
-  removeTrackByLabel(label) {
-    if (this.player) {
-      const tracks = this.player.remoteTextTracks();
-      for (let i = 0; i < tracks.length; i += 1) {
-        const track = tracks[i];
-        if (track.label === label) {
-          return this.player.removeRemoteTextTrack(track);
-        }
-      }
-    }
-    return undefined;
-  }
+	async trackToggle(label, on) {
+		if (this.player) {
+			const tracks = this.player.remoteTextTracks();
+			for (let i = 0; i < tracks.length; i++) {
+				if (tracks[i].label === label) {
+					tracks[i].mode = on ? 'showing' : 'hidden';
+					return this.markerToggle(tracks[i], on);
+				}
+			}
+		}
+		/* if track is cached but not loaded, load it now */
+		return on && this.trackCached[label] && !this.trackCached[label].loaded
+			? this.trackLoad(label)
+			: this;
+	}
 
-  trackLoadedEvent(track) {
-    this.trackCached[track.label].loaded = true;
-    if (this.trackIsSub(track)) {
-      this.cueToHtml(track);
-    } else {
-      this.markerAdd(track);
-    }
-    this.subtitleView.trigger(VideoPreview.Events.Track.Loaded, [track]);
-    return this;
-  }
+	removeTrackByLabel(label) {
+		if (this.player) {
+			const tracks = this.player.remoteTextTracks();
+			for (let i = 0; i < tracks.length; i += 1) {
+				const track = tracks[i];
+				if (track.label === label) {
+					return this.player.removeRemoteTextTrack(track);
+				}
+			}
+		}
+		return undefined;
+	}
 
-  cueChangedEvent(track) {
-    if ((track.activeCues || []).length > 0) {
-      const active = this.subtitleView.find(`[data-cue-index="${track.activeCues[0].id}"]`);
-      active.addClass('cue-highlight')
-        .siblings().removeClass('cue-highlight');
-    }
-  }
+	trackLoadedEvent(track) {
+		this.trackCached[track.label].loaded = true;
+		if (this.trackIsSub(track)) {
+			this.cueToHtml(track);
+		} else {
+			this.markerAdd(track);
+		}
+		this.subtitleView.trigger(VideoPreview.Events.Track.Loaded, [track]);
+		return this;
+	}
 
-  cueToHtml(track) {
-    for (let i = 0; i < track.cues.length; i++) {
-      const cue = $(track.cues[i].getCueAsHTML()).addClass('d-inline pr-1')
-        .attr('data-cue-index', i);
-      /* strip leading '--' characters from Amazon Transcribe */
-      cue.text(cue.text().replace(/-{2}\s/g, ' '));
-      this.subtitleView.append(cue);
-    }
-  }
+	cueChangedEvent(track) {
+		if ((track.activeCues || []).length > 0) {
+			const active = this.subtitleView.find(
+				`[data-cue-index="${track.activeCues[0].id}"]`
+			);
+			active.addClass('cue-highlight').siblings().removeClass('cue-highlight');
+		}
+	}
 
-  markerAdd(track) {
-    const markers = [];
-    for (let i = 0; i < track.cues.length; i++) {
-      markers.push({
-        time: track.cues[i].startTime,
-        duration: track.cues[i].endTime - track.cues[i].startTime,
-        text: track.label,
-        overlayText: track.label,
-      });
-    }
-    this.player.markers.add(markers);
-    return this;
-  }
+	cueToHtml(track) {
+		for (let i = 0; i < track.cues.length; i++) {
+			const cue = $(track.cues[i].getCueAsHTML())
+				.addClass('d-inline pr-1')
+				.attr('data-cue-index', i);
+			/* strip leading '--' characters from Amazon Transcribe */
+			cue.text(cue.text().replace(/-{2}\s/g, ' '));
+			this.subtitleView.append(cue);
+		}
+	}
 
-  markerRemove(track) {
-    const indices = [];
-    const markers = this.player.markers.getMarkers();
-    for (let i = 0; i < markers.length; i++) {
-      if (markers[i].overlayText === track.label) {
-        indices.push(i);
-      }
-    }
-    this.player.markers.remove(indices);
-    return this;
-  }
+	markerAdd(track) {
+		const markers = [];
+		for (let i = 0; i < track.cues.length; i++) {
+			markers.push({
+				time: track.cues[i].startTime,
+				duration: track.cues[i].endTime - track.cues[i].startTime,
+				text: track.label,
+				overlayText: track.label,
+			});
+		}
+		this.player.markers.add(markers);
+		return this;
+	}
 
-  markerToggle(track, on) {
-    return (track.label === VideoPreview.Constants.Subtitle)
-      ? undefined
-      : on
-        ? this.markerAdd(track)
-        : this.markerRemove(track);
-  }
+	markerRemove(track) {
+		const indices = [];
+		const markers = this.player.markers.getMarkers();
+		for (let i = 0; i < markers.length; i++) {
+			if (markers[i].overlayText === track.label) {
+				indices.push(i);
+			}
+		}
+		this.player.markers.remove(indices);
+		return this;
+	}
 
-  createTrackFromCues(label, cues) {
-    if (this.player) {
-      const tracks = this.player.remoteTextTracks();
-      for (let i = 0; i < tracks.length; i += 1) {
-        const track = tracks[i];
-        if (track.kind === TRACK_CHAPTERS && track.label === label) {
-          return track;
-        }
-      }
+	markerToggle(track, on) {
+		return track.label === VideoPreview.Constants.Subtitle
+			? undefined
+			: on
+			? this.markerAdd(track)
+			: this.markerRemove(track);
+	}
 
-      const texttrack = this.player.addRemoteTextTrack({
-        kind: TRACK_CHAPTERS,
-        language: 'en',
-        label,
-      }, false);
-      cues.forEach((cue) =>
-        texttrack.track.addCue(cue));
-      texttrack.track.mode = 'hidden';
-      return texttrack.track;
-    }
-    return undefined;
-  }
+	createTrackFromCues(label, cues) {
+		if (this.player) {
+			const tracks = this.player.remoteTextTracks();
+			for (let i = 0; i < tracks.length; i += 1) {
+				const track = tracks[i];
+				if (track.kind === TRACK_CHAPTERS && track.label === label) {
+					return track;
+				}
+			}
 
-  createObserver(video, player) {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: [0.1],
-    };
+			const texttrack = this.player.addRemoteTextTrack(
+				{
+					kind: TRACK_CHAPTERS,
+					language: 'en',
+					label,
+				},
+				false
+			);
+			cues.forEach(cue => texttrack.track.addCue(cue));
+			texttrack.track.mode = 'hidden';
+			return texttrack.track;
+		}
+		return undefined;
+	}
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio <= options.threshold[0]) {
-          console.log(
-            'videoPreview.createObserver',
-            'entry.intersectionRatio',
-            entry.intersectionRatio
-          );
+	createObserver(video, player) {
+		const options = {
+			root: null,
+			rootMargin: '0px',
+			threshold: [0.1],
+		};
 
-          if (player) {
-            player.pause();
-          }
-        }
-      });
-    }, options);
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio <= options.threshold[0]) {
+					console.log(
+						'videoPreview.createObserver',
+						'entry.intersectionRatio',
+						entry.intersectionRatio
+					);
 
-    observer.observe(video[0]);
+					if (player) {
+						player.pause();
+					}
+				}
+			});
+		}, options);
 
-    return observer;
-  }
+		observer.observe(video[0]);
+
+		return observer;
+	}
+
+	getIfAdvIsPlaying() {
+		return this.advIsPlaying;
+	}
+
+	createAdv() {
+		if (this.advVideo) {
+			return this.advVideo;
+		}
+		this.advVideo = document.createElement('video');
+		this.advVideo.src =
+			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4';
+		this.advVideo.classList.add('adv-video', 'd-none');
+		this.advVideo.setAttribute('controls', true);
+		this.advVideo.onended = e => {
+			this.advAlreadyPlayed = true;
+			this.play();
+			console.log(`🧊 ~ e: `, e);
+			e.target.classList.remove('d-block');
+			this.advIsPlaying = false;
+		};
+		return this.advVideo;
+	}
+
+	registerAdvListener(value) {
+		this.player.off('timeupdate', this.onTimeUpdate);
+
+		this.advAlreadyPlayed = false;
+		this.onTimeUpdate = () => {
+			if (this.advAlreadyPlayed) {
+				return;
+			}
+			console.log(`🧊 ~ timeupdate: `, this.getCurrentTime(), value);
+			if (this.getCurrentTime() > value && value < this.getCurrentTime() + 3000) {
+				this.pause();
+				this.advVideo.classList.add('d-block');
+				console.log(`🧊 ~ this.advVideo: `, this.advVideo);
+				this.advVideo.currentTime = 0;
+				this.advVideo
+					.play()
+					.then(() => {
+						this.advIsPlaying = true;
+					})
+					.catch(console.error);
+			}
+		};
+
+		this.player.on('timeupdate', this.onTimeUpdate);
+	}
 }

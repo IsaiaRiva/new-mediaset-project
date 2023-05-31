@@ -15,6 +15,7 @@ import PodcastPreview from './preview/podcastPreview.js';
 import PhotoPreview from './preview/photoPreview.js';
 import DocumentPreview from './preview/documentPreview.js';
 import MediaTypes from './mediaTypes.js';
+import { VS } from '../../fincons/classes/video-state.js';
 
 export default class MediaFactory {
   static async createMedia(uuid) {
@@ -82,6 +83,11 @@ export default class MediaFactory {
 
   static async createPreviewComponent(media, optionalSearchResults) {
     await media.getAnalysisResults();
+
+    if(media.type === MediaTypes.Video){
+      VS.setVideoData({media, optionalSearchResults})
+    }
+
     return media.type === MediaTypes.Video
       ? new VideoPreview(media, optionalSearchResults)
       : media.type === MediaTypes.Audio
