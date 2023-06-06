@@ -1,20 +1,40 @@
 import FsGraph from './fs-graph.js';
 
 class FirstFsGraph extends FsGraph {
-	makeFirstGraphOptions(data) {
+	combineDataMaker(data, client) {
+		const getMinAndRound = v => Math.round((v / 1000 / 60) * 100) / 100;
+		const getPercentage = v => Math.round(v * 100 * 100) / 100;
+
+		if (client === 'Amazon') {
+			const { pauseBreaks } = data;
+			const shots = pauseBreaks.map(({ shots }) => shots);
+			const breaks = shots
+				.map(s => s.map(({ breakTimestamp }) => breakTimestamp))
+				.flat();
+			const _breaks = breaks.map(v => getMinAndRound(v));
+			const weights = shots.map(s => s.map(({ weight }) => weight)).flat();
+			const _weight = weights.map(v => getPercentage(v));
+			return _breaks.map((b, i) => [b, 1, _weight[i], breaks[i]]);
+		}
+		if (client === 'CTS') {
+			const { result } = data;
+
+			return result.map(({ startTime, confidence }) => [
+				getMinAndRound(startTime),
+				1,
+				getPercentage(confidence),
+				startTime,
+			]);
+		}
+	}
+
+	makeFirstGraphOptions(data, client) {
 		if (!data) console.log(`🧊 ~ data: `, data);
-		const { pauseBreaks } = data;
-		const shots = pauseBreaks.map(({ shots }) => shots);
-		const breaks = shots
-			.map(s => s.map(({ breakTimestamp }) => breakTimestamp))
-			.flat();
-		const _breaks = breaks.map(v => Math.round((v / 1000 / 60) * 100) / 100);
-		const weights = shots.map(s => s.map(({ weight }) => weight)).flat();
-		const _weight = weights.map(v => Math.round(v * 100 * 100) / 100);
-		const combineData = _breaks.map((b, i) => [b, 1, _weight[i], breaks[i]]);
-		console.log(`🧊 ~ weights: `, weights);
-		console.log(`🧊 ~ breaks: `, breaks);
+		const combineData = this.combineDataMaker(data, client);
+		const top = [...combineData];
+		const _top = top.sort((f, s) => s[2] - f[2]).slice(0, 15);
 		console.log(`🧊 ~ combineData: `, combineData);
+		console.log(`🧊 ~ combineDataSort: `, _top);
 
 		const symbolSize = val => {
 			return val[2];
@@ -32,7 +52,7 @@ class FirstFsGraph extends FsGraph {
 			legend: {
 				top: 10,
 				right: 20,
-				data: ['All', '<15', '15<x<30', '>30'],
+				data: ['All', 'Low', 'Medium', 'High', 'Top 15'],
 				textStyle: {
 					fontSize: 16,
 				},
@@ -75,7 +95,7 @@ class FirstFsGraph extends FsGraph {
 			tooltip: {
 				position: 'top',
 				formatter: function ({ value }) {
-					return `insert break point: ${value[0]}m<br> weight: ${value[2]}%<br>`;
+					return `insert break point: ${value[0]}m<br> confidence: ${value[2]}%<br>`;
 				},
 			},
 
@@ -102,9 +122,28 @@ class FirstFsGraph extends FsGraph {
 			},
 			series: [
 				{ data: combineData, type: 'scatter', name: 'All', symbolSize },
+				{
+					data: _top,
+					type: 'scatter',
+					name: 'Top 15',
+					symbolSize,
+					itemStyle: {
+						...shareItemStyle,
+						color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [
+							{
+								offset: 0,
+								color: 'rgb(139 199 28)',
+							},
+							{
+								offset: 1,
+								color: 'rgb(83 119 16)',
+							},
+						]),
+					},
+				},
 
 				{
-					name: '<15',
+					name: 'Low',
 					type: 'scatter',
 					datasetIndex: 1,
 					symbolSize,
@@ -123,7 +162,7 @@ class FirstFsGraph extends FsGraph {
 					},
 				},
 				{
-					name: '15<x<30',
+					name: 'Medium',
 					type: 'scatter',
 					datasetIndex: 2,
 					symbolSize,
@@ -139,7 +178,7 @@ class FirstFsGraph extends FsGraph {
 					]),
 				},
 				{
-					name: '>30',
+					name: 'High',
 					type: 'scatter',
 					datasetIndex: 3,
 					symbolSize,

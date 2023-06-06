@@ -53,12 +53,12 @@ const [
 
 const ORDERED_CONTROLLERS = [
   COLLECTION_TAB,
-  UPLOAD_TAB,
-  PROCESSING_TAB,
-  STATS_TAB,
-  FACECOLLECTION_TAB,
-  SETTINGS_TAB,
-  USERMANAGEMENT_TAB,
+  // UPLOAD_TAB,
+  // PROCESSING_TAB,
+  // STATS_TAB,
+  // FACECOLLECTION_TAB,
+  // SETTINGS_TAB,
+  // USERMANAGEMENT_TAB,
 ];
 
 const RANDOM_ID = AppUtils.randomHexstring();
@@ -67,7 +67,7 @@ const ID_MAIN_TOASTLIST = `main-toast-${RANDOM_ID}`;
 const ID_MAIN_TABLIST = `main-tabs-${RANDOM_ID}`;
 const ID_MAIN_TABCONTENT = `main-content-${RANDOM_ID}`;
 const SOLUTION_URL = 'https://aws.amazon.com/solutions/media2cloud/';
-const SOLUTION_ICON = '/images/m2c-short-white.png';
+const SOLUTION_ICON = '/images/fincons/logo_fincons.svg';
 
 function parseHashtag(hashtag = '') {
   let tag = hashtag;
@@ -134,7 +134,7 @@ export default class MainView {
     await this.hide();
 
     const navbar = $('<nav/>')
-      .addClass('navbar navbar-expand-lg navbar-dark bg-dark')
+      .addClass('navbar navbar-expand-lg navbar-dark fs-navbar')
       .append(this.createLogo())
       .append(this.createNavToggle())
       .append(this.createTabItems())
@@ -204,7 +204,7 @@ export default class MainView {
       .attr('id', id);
 
     const navbar = $('<div/>')
-      .addClass('navbar-nav')
+      .addClass('navbar-nav fs-tab-list')
       .attr('role', 'tablist');
     container.append(navbar);
 
@@ -222,7 +222,7 @@ export default class MainView {
     const session = GetUserSession();
 
     const logout = $('<button/>')
-      .addClass('btn btn-sm btn-link text-white')
+      .addClass('btn btn-sm btn-link fs-login-icon')
       .attr('type', 'button')
       .attr('data-toggle', 'tooltip')
       .attr('data-placement', 'bottom')

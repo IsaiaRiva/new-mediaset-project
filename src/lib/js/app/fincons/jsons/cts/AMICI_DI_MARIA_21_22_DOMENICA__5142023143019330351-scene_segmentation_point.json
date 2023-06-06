@@ -1,0 +1,62 @@
+{
+	"result": [
+		{
+			"time_hrf": " 0:20:55",
+			"confidence": "0.889",
+			"startTime": 1255854,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 0:24:47",
+			"confidence": "0.667",
+			"startTime": 1487853,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 0:42:40",
+			"confidence": "0.778",
+			"startTime": 2560891,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 1: 4:52",
+			"confidence": "0.556",
+			"startTime": 3892922,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 1:22: 7",
+			"confidence": "0.778",
+			"startTime": 4927289,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 1:46:28",
+			"confidence": "0.556",
+			"startTime": 6388048,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 1:48:12",
+			"confidence": "0.556",
+			"startTime": 6492552,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 2:10:19",
+			"confidence": "0.556",
+			"startTime": 7819178,
+			"type": "scene_segmentation_point"
+		},
+		{
+			"time_hrf": " 2:10:29",
+			"confidence": "0.778",
+			"startTime": 7829087,
+			"type": "scene_segmentation_point"
+		}
+	],
+	"startIndex": 0,
+	"itemsPerPage": 9,
+	"totalResults": 9,
+	"filtered": false
+}

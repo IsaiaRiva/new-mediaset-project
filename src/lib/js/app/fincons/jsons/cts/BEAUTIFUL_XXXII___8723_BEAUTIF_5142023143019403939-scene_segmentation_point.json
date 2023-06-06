@@ -1,0 +1,50 @@
+{
+	"result": [
+		{
+			"time_hrf": " 0: 4:25",
+			"type": "scene_segmentation_point",
+			"startTime": 265999,
+			"confidence": "0.556"
+		},
+		{
+			"time_hrf": " 0:12: 1",
+			"type": "scene_segmentation_point",
+			"startTime": 721120,
+			"confidence": "0.778"
+		},
+		{
+			"time_hrf": " 0:12:32",
+			"type": "scene_segmentation_point",
+			"startTime": 752752,
+			"confidence": "0.778"
+		},
+		{
+			"time_hrf": " 0:14: 5",
+			"type": "scene_segmentation_point",
+			"startTime": 845244,
+			"confidence": "0.667"
+		},
+		{
+			"time_hrf": " 0:15:22",
+			"type": "scene_segmentation_point",
+			"startTime": 922254,
+			"confidence": "0.500"
+		},
+		{
+			"time_hrf": " 0:17:36",
+			"type": "scene_segmentation_point",
+			"startTime": 1056522,
+			"confidence": "0.889"
+		},
+		{
+			"time_hrf": " 0:20: 4",
+			"type": "scene_segmentation_point",
+			"startTime": 1204970,
+			"confidence": "0.556"
+		}
+	],
+	"startIndex": 0,
+	"itemsPerPage": 7,
+	"totalResults": 7,
+	"filtered": false
+}

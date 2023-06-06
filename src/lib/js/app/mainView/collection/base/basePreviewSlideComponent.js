@@ -167,7 +167,7 @@ export default class BasePreviewSlideComponent extends BaseSlideComponent {
     container.append(analysisContainer);
  
     const useCasesContainer = $('<div/>')
-      .addClass('col-12 p-0 m-0 overflow-auto use-cases-container d-none');
+      .addClass('col-12 p-0 m-0 overflow-auto use-cases-container');
     container.append(useCasesContainer);
 
     const controls = this.createAnalysisView();

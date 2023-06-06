@@ -20,6 +20,7 @@ export default class BaseStore {
   }
 
   async getItem(id) {
+    console.log(`🧊 ~ storeName: `, this.storeName);
     return this.db.getItem(this.storeName, id);
   }
 

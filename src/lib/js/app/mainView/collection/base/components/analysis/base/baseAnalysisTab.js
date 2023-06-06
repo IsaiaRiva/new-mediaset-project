@@ -97,7 +97,7 @@ export default class BaseAnalysisTab extends mxReadable(BaseTab) {
 
   createBackgroundTitle() {
     return $('<div/>')
-      .addClass(`${COL_TAB} d-flex justify-content-center custom-bg min-h24r`)
+      .addClass(`${COL_TAB} d-none justify-content-center custom-bg min-h24r`)
       .append($('<span/>')
         .addClass('align-self-center text-uppercase')
         .html(this.title));

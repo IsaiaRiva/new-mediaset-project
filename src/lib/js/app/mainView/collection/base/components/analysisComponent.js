@@ -198,7 +198,7 @@ export default class AnalysisComponent {
   }
 
   createTabsAndContents() {
-    const ul = $('<ul/>').addClass('nav flex-column ml-2 my-4')
+    const ul = $('<ul/>').addClass('nav flex-column ml-2 my-4 fs-default-menu')
       .attr('role', 'tablist');
     this.tabControllers.forEach(controller =>
       ul.append(controller.tabLink));
@@ -215,11 +215,11 @@ export default class AnalysisComponent {
       tabs,
       contents,
     ] = this.createTabsAndContents();
-    const menu = $('<nav/>').addClass('col-2 d-none d-md-block sidebar')
+    const menu = $('<nav/>').addClass('col-2 d-none sidebar')
       .css('min-height', 300)
       .append(tabs);
     const tabContents = $('<div/>').addClass('tab-content')
-      .addClass('col-10 p-0 m-0')
+      .addClass('col-12 p-0 m-0')
       .append(contents);
     const container = $('<div/>').addClass('col-12 p-0 m-0')
       .append($('<div/>').addClass('row no-gutters')

@@ -34,7 +34,7 @@ export default class Localization {
       'en-US': {
         Messages: {
           /* signin flow */
-          Title: 'Media2Cloud Demo Portal <span style="font-size:0.85rem">by AWS Solutions Team</span>',
+          Title: 'Fincons Demo Portal',
           PwdRequirement: `${FIELD_PWD} must be at least <abbr title="eight characters">eight</abbr> characters long and contain <abbr title="one uppercase character">one</abbr> uppercase, <abbr title="one lowercase character">one</abbr> lowercase, <abbr title="one numeric character">one</abbr> number, and <abbr title="one special character">one</abbr> special character.`,
           ResetSendCode: `Please enter the username and press <strong>Send code</strong>. You should receive a 6-digits code in mail in a few minutes. You will need the code to reset the ${FIELD_PWD}.`,
           ResetPwd: `Please enter the verification code that has sent to your email address and your new ${FIELD_PWD}.`,

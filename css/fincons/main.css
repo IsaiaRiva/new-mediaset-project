@@ -4,3 +4,33 @@
   width: 100%;
   inset: 0;
 }
+.fs-default-menu {
+ display: none !important;
+}
+
+.fs-navbar {
+  background-color: var(--depa);
+}
+
+.fs-login-icon, .fs-login-btn, .fs-tab-list .nav-link, .fs-forgot-password {
+  color: var(--leo) !important;
+}
+
+.fs-tab-list .nav-link:hover, .fs-login-icon:hover, .fs-forgot-password {
+  color: var(--ale) !important;
+}
+
+.fs-login-btn {
+  border-radius: 2em;
+  color: var(--depa);
+  background-color: var(--leo);
+}
+
+.fs-login-btn:hover {
+  color: var(--depa);
+  background-color: var(--ale);
+}
+
+.use-cases-container {
+  min-height: 300px;
+}

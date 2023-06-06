@@ -43,6 +43,7 @@ export default class BaseTab {
     });
 
     anchor.on('shown.bs.tab', async (event) => {
+      console.log(`🧊 ~ event: `, event);
       const target = $(event.target);
       target.parent().siblings()
         .children('.nav-link')

@@ -21,7 +21,7 @@ const {
   ChallengeNameType,
 } = window.AWSv3;
 
-const SOLUTION_ICON = '/images/m2c-full-black.png';
+const SOLUTION_ICON = '/images/fincons/logo_fincons.svg';
 const COPYRIGHT = 'copyright &copy; 2023';
 
 const OOPS = Localization.Alerts.Oops;
@@ -718,7 +718,7 @@ class SignInFlow {
       .addClass('mt-4');
 
     const button = $('<button/>')
-      .addClass('btn btn-primary btn-block')
+      .addClass('btn btn-block fs-login-btn')
       .attr('type', 'submit')
       .html(text);
     container.append(button);
@@ -728,7 +728,7 @@ class SignInFlow {
 
   createResetLink() {
     const button = $('<button/>')
-      .addClass('btn btn-sm btn-link mt-2')
+      .addClass('btn btn-sm btn-link mt-2 fs-forgot-password')
       .attr('type', 'button')
       .html('Forgot password?');
 

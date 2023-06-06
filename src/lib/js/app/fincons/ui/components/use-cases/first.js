@@ -4,7 +4,7 @@ import { insertIntoUserCaseTab } from '../../logic/dom-manipulation.js';
 import { jsonMap } from '../../../jsons/json-map.js';
 import { getAdvVideo, getPLayerContainer } from '../../logic/selectors.js';
 
-export const createFirstGraph = ({ useCase }) => {
+export const createFirstGraph = ({ useCase, client = 'Amazon' }) => {
 	const graph = FirstGraph;
 
 	graph.destroy();
@@ -14,9 +14,9 @@ export const createFirstGraph = ({ useCase }) => {
 			$data: { basename },
 		},
 	} = VS.getVideoData();
-	const JsonData = jsonMap(basename);
+	const JsonData = jsonMap(basename, client);
 
-	const options = graph.makeFirstGraphOptions(JsonData);
+	const options = graph.makeFirstGraphOptions(JsonData, client);
 	graph.create(JsonData, options);
 	graph.setOn('scatter:data:selected', async (event, datapoint) =>
 		onDataPointSelected(event, datapoint)

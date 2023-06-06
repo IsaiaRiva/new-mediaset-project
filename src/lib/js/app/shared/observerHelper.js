@@ -49,7 +49,7 @@ export default class ObserverHelper {
 
           const titles = hashtag.split('/');
           titles.unshift(SolutionName);
-          document.title = titles.join(' > ');
+          // document.title = titles.join(' > ');
         }
       });
     }, options);

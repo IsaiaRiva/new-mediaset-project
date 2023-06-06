@@ -206,7 +206,7 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
       .getItem(key)
       .catch(() =>
         undefined);
-
+    // console.log(`🧊 ~ datasets: `, datasets);
     if (!datasets || !datasets[0] || datasets[0].duration === undefined) {
       datasets = await this.download(key)
         .catch((e) => {
@@ -221,14 +221,16 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
 
       if (datasets) {
         datasets = await datasets.Body.transformToString()
-          .then((res) =>
-            Object.values(JSON.parse(res))
+          .then((res) => {
+            console.log(`🧊 ~ res: `, res)
+            return Object.values(JSON.parse(res))
               .map((x) => ({
                 ...x,
                 basename: x.label.toLowerCase()
                   .replace(/\s/g, '_')
                   .replace(/\//g, '-'),
-              })));
+              }))})
+          
 
         /* cache the result */
         await this.datasetStore
@@ -245,10 +247,10 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
     let datasets = await this.datasetStore.getItem(prefix)
       .catch(() =>
         undefined);
-    if (datasets && datasets[0].duration !== undefined) {
-      return datasets;
-    }
-
+        if (datasets && datasets[0].duration !== undefined) {
+          return datasets;
+        }
+        
     let responses = await Promise.all(names
       .map((name) => {
         const key = `${prefix}${name}.json`;
@@ -640,7 +642,7 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
 
   loadContent(tabContent) {
     const container = $('<div/>')
-      .addClass('col-9 my-4 max-h36r')
+      .addClass('col-12 p-4')
       .addClass('rekog-tab');
 
     container.ready(async () => {
