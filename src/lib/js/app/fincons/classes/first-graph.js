@@ -10,7 +10,7 @@ class FirstFsGraph extends FsGraph {
 			const breaks = shots
 				.map(s => s.map(({ breakTimestamp }) => breakTimestamp))
 				.flat();
-			const _breaks = breaks.map(v => getMinAndRound(v)).sort((a, b) => a - b);
+			const _breaks = breaks.map(v => getMinAndRound(v));
 			const weights = shots.map(s => s.map(({ weight }) => weight)).flat();
 			const _weight = weights;
 			return _breaks.map((b, i) => [b, 1, _weight[i], breaks[i]]);
@@ -26,7 +26,7 @@ class FirstFsGraph extends FsGraph {
 			]);
 		}
 		const breaks = data.map(({ breakTimestamp }) => breakTimestamp);
-		const _breaks = breaks.map(v => getMinAndRound(v)).sort((a, b) => a - b);
+		const _breaks = breaks.map(v => getMinAndRound(v));
 		const weights = data.map(({ weight }) => weight);
 		const _weight = weights.map(v => v);
 		if (client === 'AdvInsertion') {
@@ -46,7 +46,7 @@ class FirstFsGraph extends FsGraph {
 
 	makeFirstGraphOptions(data, client) {
 		if (!data) console.log(`🧊 ~ data: `, data);
-		const combineData = this.combineDataMaker(data, client);
+		const combineData = this.combineDataMaker(data, client).sort((a, b) => a[0] - b[0]);
 		const top = [...combineData];
 		const _top = top.sort((f, s) => s[2] - f[2]).slice(0, 15);
 		console.log(`🧊 ~ combineData: `, combineData);
