@@ -165,6 +165,7 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
   }
 
   async createScatterGraph(type, namePrefix) {
+    console.log(`🧊 ~ type, namePrefix: `, type, namePrefix);
     const category = this.data || {};
     if (!category.timeseries) {
       return undefined;
@@ -189,7 +190,7 @@ export default class BaseRekognitionTab extends BaseRekognitionImageTab {
       return undefined;
     }
 
-    this.scatterGraph = new ScatterGraph(datasets);
+    this.scatterGraph = new ScatterGraph(datasets, type);
     this.scatterGraph.on(ScatterGraph.Events.Data.Selected, async (event, datapoint) =>
       this.onDataPointSelected(datapoint));
     this.scatterGraph.on(ScatterGraph.Events.Legend.Changed, async (event, legends) =>

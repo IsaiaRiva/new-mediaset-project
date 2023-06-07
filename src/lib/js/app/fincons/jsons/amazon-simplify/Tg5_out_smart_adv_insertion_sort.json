@@ -1,0 +1,2518 @@
+[
+  {
+    "index": 289,
+    "timestampStart": 1429520,
+    "timestampEnd": 1432840,
+    "smpteStart": "00:23:49:13",
+    "smpteEnd": "00:23:52:21",
+    "frameStart": 35738,
+    "frameEnd": 35821,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1432840,
+    "breakTime": "00:23:52",
+    "loudness": {
+      "timestamp": 1432000,
+      "momentary": -9.647
+    },
+    "weight": 0.0804
+  },
+  {
+    "index": 290,
+    "timestampStart": 1432880,
+    "timestampEnd": 1441120,
+    "smpteStart": "00:23:52:22",
+    "smpteEnd": "00:24:01:03",
+    "frameStart": 35822,
+    "frameEnd": 36028,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1432880,
+    "breakTime": "00:23:52",
+    "loudness": {
+      "timestamp": 1432000,
+      "momentary": -9.647
+    },
+    "weight": 0.0804
+  },
+  {
+    "index": 34,
+    "timestampStart": 127200,
+    "timestampEnd": 132240,
+    "smpteStart": "00:02:07:05",
+    "smpteEnd": "00:02:12:06",
+    "frameStart": 3180,
+    "frameEnd": 3306,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 132240,
+    "breakTime": "00:02:12",
+    "loudness": {
+      "timestamp": 132000,
+      "momentary": -10.72
+    },
+    "weight": 0.0893
+  },
+  {
+    "index": 35,
+    "timestampStart": 132320,
+    "timestampEnd": 132960,
+    "smpteStart": "00:02:12:08",
+    "smpteEnd": "00:02:12:24",
+    "frameStart": 3308,
+    "frameEnd": 3324,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 132320,
+    "breakTime": "00:02:12",
+    "loudness": {
+      "timestamp": 132000,
+      "momentary": -10.72
+    },
+    "weight": 0.0893
+  },
+  {
+    "index": 47,
+    "timestampStart": 190480,
+    "timestampEnd": 193480,
+    "smpteStart": "00:03:10:12",
+    "smpteEnd": "00:03:13:12",
+    "frameStart": 4762,
+    "frameEnd": 4837,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 190480,
+    "breakTime": "00:03:10",
+    "loudness": {
+      "timestamp": 190000,
+      "momentary": -11.134
+    },
+    "weight": 0.0928
+  },
+  {
+    "index": 135,
+    "timestampStart": 666120,
+    "timestampEnd": 671840,
+    "smpteStart": "00:11:06:03",
+    "smpteEnd": "00:11:11:21",
+    "frameStart": 16653,
+    "frameEnd": 16796,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 671840,
+    "breakTime": "00:11:11",
+    "loudness": {
+      "timestamp": 671000,
+      "momentary": -11.397
+    },
+    "weight": 0.095
+  },
+  {
+    "index": 136,
+    "timestampStart": 671880,
+    "timestampEnd": 675160,
+    "smpteStart": "00:11:11:22",
+    "smpteEnd": "00:11:15:04",
+    "frameStart": 16797,
+    "frameEnd": 16879,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 671880,
+    "breakTime": "00:11:11",
+    "loudness": {
+      "timestamp": 671000,
+      "momentary": -11.397
+    },
+    "weight": 0.095
+  },
+  {
+    "index": 282,
+    "timestampStart": 1404640,
+    "timestampEnd": 1408920,
+    "smpteStart": "00:23:24:16",
+    "smpteEnd": "00:23:28:23",
+    "frameStart": 35116,
+    "frameEnd": 35223,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1408920,
+    "breakTime": "00:23:28",
+    "loudness": {
+      "timestamp": 1408000,
+      "momentary": -11.48
+    },
+    "weight": 0.0957
+  },
+  {
+    "index": 283,
+    "timestampStart": 1408960,
+    "timestampEnd": 1412320,
+    "smpteStart": "00:23:28:24",
+    "smpteEnd": "00:23:32:08",
+    "frameStart": 35224,
+    "frameEnd": 35308,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1408960,
+    "breakTime": "00:23:28",
+    "loudness": {
+      "timestamp": 1408000,
+      "momentary": -11.48
+    },
+    "weight": 0.0957
+  },
+  {
+    "index": 328,
+    "timestampStart": 1577600,
+    "timestampEnd": 1578240,
+    "smpteStart": "00:26:17:15",
+    "smpteEnd": "00:26:18:06",
+    "frameStart": 39440,
+    "frameEnd": 39456,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1577600,
+    "breakTime": "00:26:17",
+    "loudness": {
+      "timestamp": 1577000,
+      "momentary": -11.493
+    },
+    "weight": 0.0958
+  },
+  {
+    "index": 329,
+    "timestampStart": 1578280,
+    "timestampEnd": 1579000,
+    "smpteStart": "00:26:18:07",
+    "smpteEnd": "00:26:19:00",
+    "frameStart": 39457,
+    "frameEnd": 39475,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1578280,
+    "breakTime": "00:26:18",
+    "loudness": {
+      "timestamp": 1578000,
+      "momentary": -11.493
+    },
+    "weight": 0.0958
+  },
+  {
+    "index": 50,
+    "timestampStart": 199560,
+    "timestampEnd": 201840,
+    "smpteStart": "00:03:19:14",
+    "smpteEnd": "00:03:21:21",
+    "frameStart": 4989,
+    "frameEnd": 5046,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 201840,
+    "breakTime": "00:03:21",
+    "loudness": {
+      "timestamp": 201000,
+      "momentary": -11.629
+    },
+    "weight": 0.0969
+  },
+  {
+    "index": 51,
+    "timestampStart": 201880,
+    "timestampEnd": 206680,
+    "smpteStart": "00:03:21:22",
+    "smpteEnd": "00:03:26:17",
+    "frameStart": 5047,
+    "frameEnd": 5167,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 201880,
+    "breakTime": "00:03:21",
+    "loudness": {
+      "timestamp": 201000,
+      "momentary": -11.629
+    },
+    "weight": 0.0969
+  },
+  {
+    "index": 242,
+    "timestampStart": 1177920,
+    "timestampEnd": 1179920,
+    "smpteStart": "00:19:37:23",
+    "smpteEnd": "00:19:39:23",
+    "frameStart": 29448,
+    "frameEnd": 29498,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1179920,
+    "breakTime": "00:19:39",
+    "loudness": {
+      "timestamp": 1179000,
+      "momentary": -11.699
+    },
+    "weight": 0.0975
+  },
+  {
+    "index": 243,
+    "timestampStart": 1179960,
+    "timestampEnd": 1212760,
+    "smpteStart": "00:19:39:24",
+    "smpteEnd": "00:20:12:19",
+    "frameStart": 29499,
+    "frameEnd": 30319,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1179960,
+    "breakTime": "00:19:39",
+    "loudness": {
+      "timestamp": 1179000,
+      "momentary": -11.699
+    },
+    "weight": 0.0975
+  },
+  {
+    "index": 392,
+    "timestampStart": 1760680,
+    "timestampEnd": 1769000,
+    "smpteStart": "00:29:20:17",
+    "smpteEnd": "00:29:29:00",
+    "frameStart": 44017,
+    "frameEnd": 44225,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1769000,
+    "breakTime": "00:29:29",
+    "loudness": {
+      "timestamp": 1769000,
+      "momentary": -11.963
+    },
+    "weight": 0.0997
+  },
+  {
+    "index": 393,
+    "timestampStart": 1769040,
+    "timestampEnd": 1771840,
+    "smpteStart": "00:29:29:01",
+    "smpteEnd": "00:29:31:21",
+    "frameStart": 44226,
+    "frameEnd": 44296,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1769040,
+    "breakTime": "00:29:29",
+    "loudness": {
+      "timestamp": 1769000,
+      "momentary": -11.963
+    },
+    "weight": 0.0997
+  },
+  {
+    "index": 295,
+    "timestampStart": 1456680,
+    "timestampEnd": 1463000,
+    "smpteStart": "00:24:16:17",
+    "smpteEnd": "00:24:23:00",
+    "frameStart": 36417,
+    "frameEnd": 36575,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1463000,
+    "breakTime": "00:24:23",
+    "loudness": {
+      "timestamp": 1463000,
+      "momentary": -11.976
+    },
+    "weight": 0.0998
+  },
+  {
+    "index": 296,
+    "timestampStart": 1463040,
+    "timestampEnd": 1464000,
+    "smpteStart": "00:24:23:01",
+    "smpteEnd": "00:24:24:00",
+    "frameStart": 36576,
+    "frameEnd": 36600,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1463040,
+    "breakTime": "00:24:23",
+    "loudness": {
+      "timestamp": 1463000,
+      "momentary": -11.976
+    },
+    "weight": 0.0998
+  },
+  {
+    "index": 297,
+    "timestampStart": 1464040,
+    "timestampEnd": 1466920,
+    "smpteStart": "00:24:24:01",
+    "smpteEnd": "00:24:26:23",
+    "frameStart": 36601,
+    "frameEnd": 36673,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1464040,
+    "breakTime": "00:24:24",
+    "loudness": {
+      "timestamp": 1464000,
+      "momentary": -11.976
+    },
+    "weight": 0.0998
+  },
+  {
+    "index": 314,
+    "timestampStart": 1535880,
+    "timestampEnd": 1538520,
+    "smpteStart": "00:25:35:22",
+    "smpteEnd": "00:25:38:13",
+    "frameStart": 38397,
+    "frameEnd": 38463,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1538520,
+    "breakTime": "00:25:38",
+    "loudness": {
+      "timestamp": 1538000,
+      "momentary": -11.99
+    },
+    "weight": 0.0999
+  },
+  {
+    "index": 315,
+    "timestampStart": 1538560,
+    "timestampEnd": 1542800,
+    "smpteStart": "00:25:38:14",
+    "smpteEnd": "00:25:42:20",
+    "frameStart": 38464,
+    "frameEnd": 38570,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1538560,
+    "breakTime": "00:25:38",
+    "loudness": {
+      "timestamp": 1538000,
+      "momentary": -11.99
+    },
+    "weight": 0.0999
+  },
+  {
+    "index": 277,
+    "timestampStart": 1357600,
+    "timestampEnd": 1376560,
+    "smpteStart": "00:22:37:15",
+    "smpteEnd": "00:22:56:14",
+    "frameStart": 33940,
+    "frameEnd": 34414,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1376560,
+    "breakTime": "00:22:56",
+    "loudness": {
+      "timestamp": 1376000,
+      "momentary": -12.013
+    },
+    "weight": 0.1001
+  },
+  {
+    "index": 278,
+    "timestampStart": 1376600,
+    "timestampEnd": 1379640,
+    "smpteStart": "00:22:56:15",
+    "smpteEnd": "00:22:59:16",
+    "frameStart": 34415,
+    "frameEnd": 34491,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1376600,
+    "breakTime": "00:22:56",
+    "loudness": {
+      "timestamp": 1376000,
+      "momentary": -12.013
+    },
+    "weight": 0.1001
+  },
+  {
+    "index": 341,
+    "timestampStart": 1606000,
+    "timestampEnd": 1610440,
+    "smpteStart": "00:26:46:00",
+    "smpteEnd": "00:26:50:11",
+    "frameStart": 40150,
+    "frameEnd": 40261,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1606000,
+    "breakTime": "00:26:46",
+    "loudness": {
+      "timestamp": 1606000,
+      "momentary": -12.154
+    },
+    "weight": 0.1013
+  },
+  {
+    "index": 95,
+    "timestampStart": 383120,
+    "timestampEnd": 393520,
+    "smpteStart": "00:06:23:03",
+    "smpteEnd": "00:06:33:13",
+    "frameStart": 9578,
+    "frameEnd": 9838,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 393520,
+    "breakTime": "00:06:33",
+    "loudness": {
+      "timestamp": 393000,
+      "momentary": -12.325
+    },
+    "weight": 0.1027
+  },
+  {
+    "index": 96,
+    "timestampStart": 393560,
+    "timestampEnd": 412600,
+    "smpteStart": "00:06:33:14",
+    "smpteEnd": "00:06:52:15",
+    "frameStart": 9839,
+    "frameEnd": 10315,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 393560,
+    "breakTime": "00:06:33",
+    "loudness": {
+      "timestamp": 393000,
+      "momentary": -12.325
+    },
+    "weight": 0.1027
+  },
+  {
+    "index": 4,
+    "timestampStart": 22160,
+    "timestampEnd": 24760,
+    "smpteStart": "00:00:22:04",
+    "smpteEnd": "00:00:24:19",
+    "frameStart": 554,
+    "frameEnd": 619,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 24760,
+    "breakTime": "00:00:24",
+    "loudness": {
+      "timestamp": 24000,
+      "momentary": -12.333
+    },
+    "weight": 0.1028
+  },
+  {
+    "index": 5,
+    "timestampStart": 24800,
+    "timestampEnd": 29080,
+    "smpteStart": "00:00:24:20",
+    "smpteEnd": "00:00:29:02",
+    "frameStart": 620,
+    "frameEnd": 727,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 24800,
+    "breakTime": "00:00:24",
+    "loudness": {
+      "timestamp": 24000,
+      "momentary": -12.333
+    },
+    "weight": 0.1028
+  },
+  {
+    "index": 267,
+    "timestampStart": 1310120,
+    "timestampEnd": 1314600,
+    "smpteStart": "00:21:50:03",
+    "smpteEnd": "00:21:54:15",
+    "frameStart": 32753,
+    "frameEnd": 32865,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1314600,
+    "breakTime": "00:21:54",
+    "loudness": {
+      "timestamp": 1314000,
+      "momentary": -12.535
+    },
+    "weight": 0.1045
+  },
+  {
+    "index": 268,
+    "timestampStart": 1314640,
+    "timestampEnd": 1316920,
+    "smpteStart": "00:21:54:16",
+    "smpteEnd": "00:21:56:23",
+    "frameStart": 32866,
+    "frameEnd": 32923,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1314640,
+    "breakTime": "00:21:54",
+    "loudness": {
+      "timestamp": 1314000,
+      "momentary": -12.535
+    },
+    "weight": 0.1045
+  },
+  {
+    "index": 108,
+    "timestampStart": 476240,
+    "timestampEnd": 485200,
+    "smpteStart": "00:07:56:06",
+    "smpteEnd": "00:08:05:05",
+    "frameStart": 11906,
+    "frameEnd": 12130,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 485200,
+    "breakTime": "00:08:05",
+    "loudness": {
+      "timestamp": 485000,
+      "momentary": -12.68
+    },
+    "weight": 0.1057
+  },
+  {
+    "index": 109,
+    "timestampStart": 485240,
+    "timestampEnd": 497200,
+    "smpteStart": "00:08:05:06",
+    "smpteEnd": "00:08:17:05",
+    "frameStart": 12131,
+    "frameEnd": 12430,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 485240,
+    "breakTime": "00:08:05",
+    "loudness": {
+      "timestamp": 485000,
+      "momentary": -12.68
+    },
+    "weight": 0.1057
+  },
+  {
+    "index": 325,
+    "timestampStart": 1570360,
+    "timestampEnd": 1573920,
+    "smpteStart": "00:26:10:09",
+    "smpteEnd": "00:26:13:23",
+    "frameStart": 39259,
+    "frameEnd": 39348,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1573920,
+    "breakTime": "00:26:13",
+    "loudness": {
+      "timestamp": 1573000,
+      "momentary": -12.68
+    },
+    "weight": 0.1057
+  },
+  {
+    "index": 326,
+    "timestampStart": 1573960,
+    "timestampEnd": 1575880,
+    "smpteStart": "00:26:13:24",
+    "smpteEnd": "00:26:15:22",
+    "frameStart": 39349,
+    "frameEnd": 39397,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1573960,
+    "breakTime": "00:26:13",
+    "loudness": {
+      "timestamp": 1573000,
+      "momentary": -12.68
+    },
+    "weight": 0.1057
+  },
+  {
+    "index": 327,
+    "timestampStart": 1575920,
+    "timestampEnd": 1577560,
+    "smpteStart": "00:26:15:23",
+    "smpteEnd": "00:26:17:14",
+    "frameStart": 39398,
+    "frameEnd": 39439,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1575920,
+    "breakTime": "00:26:15",
+    "loudness": {
+      "timestamp": 1575000,
+      "momentary": -12.68
+    },
+    "weight": 0.1057
+  },
+  {
+    "index": 129,
+    "timestampStart": 634160,
+    "timestampEnd": 641680,
+    "smpteStart": "00:10:34:04",
+    "smpteEnd": "00:10:41:17",
+    "frameStart": 15854,
+    "frameEnd": 16042,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 641680,
+    "breakTime": "00:10:41",
+    "loudness": {
+      "timestamp": 641000,
+      "momentary": -12.696
+    },
+    "weight": 0.1058
+  },
+  {
+    "index": 130,
+    "timestampStart": 641720,
+    "timestampEnd": 645800,
+    "smpteStart": "00:10:41:18",
+    "smpteEnd": "00:10:45:20",
+    "frameStart": 16043,
+    "frameEnd": 16145,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 641720,
+    "breakTime": "00:10:41",
+    "loudness": {
+      "timestamp": 641000,
+      "momentary": -12.696
+    },
+    "weight": 0.1058
+  },
+  {
+    "index": 56,
+    "timestampStart": 217640,
+    "timestampEnd": 220240,
+    "smpteStart": "00:03:37:16",
+    "smpteEnd": "00:03:40:06",
+    "frameStart": 5441,
+    "frameEnd": 5506,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 220240,
+    "breakTime": "00:03:40",
+    "loudness": {
+      "timestamp": 220000,
+      "momentary": -12.729
+    },
+    "weight": 0.1061
+  },
+  {
+    "index": 57,
+    "timestampStart": 220280,
+    "timestampEnd": 222200,
+    "smpteStart": "00:03:40:07",
+    "smpteEnd": "00:03:42:05",
+    "frameStart": 5507,
+    "frameEnd": 5555,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 220280,
+    "breakTime": "00:03:40",
+    "loudness": {
+      "timestamp": 220000,
+      "momentary": -12.729
+    },
+    "weight": 0.1061
+  },
+  {
+    "index": 58,
+    "timestampStart": 222240,
+    "timestampEnd": 224680,
+    "smpteStart": "00:03:42:06",
+    "smpteEnd": "00:03:44:17",
+    "frameStart": 5556,
+    "frameEnd": 5617,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 222240,
+    "breakTime": "00:03:42",
+    "loudness": {
+      "timestamp": 222000,
+      "momentary": -12.729
+    },
+    "weight": 0.1061
+  },
+  {
+    "index": 102,
+    "timestampStart": 444240,
+    "timestampEnd": 451200,
+    "smpteStart": "00:07:24:06",
+    "smpteEnd": "00:07:31:05",
+    "frameStart": 11106,
+    "frameEnd": 11280,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 451200,
+    "breakTime": "00:07:31",
+    "loudness": {
+      "timestamp": 451000,
+      "momentary": -12.787
+    },
+    "weight": 0.1066
+  },
+  {
+    "index": 103,
+    "timestampStart": 451240,
+    "timestampEnd": 456200,
+    "smpteStart": "00:07:31:06",
+    "smpteEnd": "00:07:36:05",
+    "frameStart": 11281,
+    "frameEnd": 11405,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 451240,
+    "breakTime": "00:07:31",
+    "loudness": {
+      "timestamp": 451000,
+      "momentary": -12.787
+    },
+    "weight": 0.1066
+  },
+  {
+    "index": 197,
+    "timestampStart": 977400,
+    "timestampEnd": 981520,
+    "smpteStart": "00:16:17:10",
+    "smpteEnd": "00:16:21:13",
+    "frameStart": 24435,
+    "frameEnd": 24538,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 981520,
+    "breakTime": "00:16:21",
+    "loudness": {
+      "timestamp": 981000,
+      "momentary": -12.793
+    },
+    "weight": 0.1066
+  },
+  {
+    "index": 198,
+    "timestampStart": 981560,
+    "timestampEnd": 985320,
+    "smpteStart": "00:16:21:14",
+    "smpteEnd": "00:16:25:08",
+    "frameStart": 24539,
+    "frameEnd": 24633,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 981560,
+    "breakTime": "00:16:21",
+    "loudness": {
+      "timestamp": 981000,
+      "momentary": -12.793
+    },
+    "weight": 0.1066
+  },
+  {
+    "index": 45,
+    "timestampStart": 183960,
+    "timestampEnd": 188360,
+    "smpteStart": "00:03:03:24",
+    "smpteEnd": "00:03:08:09",
+    "frameStart": 4599,
+    "frameEnd": 4709,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 188360,
+    "breakTime": "00:03:08",
+    "loudness": {
+      "timestamp": 188000,
+      "momentary": -12.996
+    },
+    "weight": 0.1083
+  },
+  {
+    "index": 46,
+    "timestampStart": 188400,
+    "timestampEnd": 190440,
+    "smpteStart": "00:03:08:10",
+    "smpteEnd": "00:03:10:11",
+    "frameStart": 4710,
+    "frameEnd": 4761,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 188400,
+    "breakTime": "00:03:08",
+    "loudness": {
+      "timestamp": 188000,
+      "momentary": -12.996
+    },
+    "weight": 0.1083
+  },
+  {
+    "index": 340,
+    "timestampStart": 1603240,
+    "timestampEnd": 1605960,
+    "smpteStart": "00:26:43:06",
+    "smpteEnd": "00:26:45:24",
+    "frameStart": 40081,
+    "frameEnd": 40149,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1605960,
+    "breakTime": "00:26:45",
+    "loudness": {
+      "timestamp": 1605000,
+      "momentary": -12.998
+    },
+    "weight": 0.1083
+  },
+  {
+    "index": 350,
+    "timestampStart": 1653560,
+    "timestampEnd": 1656200,
+    "smpteStart": "00:27:33:14",
+    "smpteEnd": "00:27:36:05",
+    "frameStart": 41339,
+    "frameEnd": 41405,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1656200,
+    "breakTime": "00:27:36",
+    "loudness": {
+      "timestamp": 1656000,
+      "momentary": -12.998
+    },
+    "weight": 0.1083
+  },
+  {
+    "index": 351,
+    "timestampStart": 1656240,
+    "timestampEnd": 1660120,
+    "smpteStart": "00:27:36:06",
+    "smpteEnd": "00:27:40:03",
+    "frameStart": 41406,
+    "frameEnd": 41503,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1656240,
+    "breakTime": "00:27:36",
+    "loudness": {
+      "timestamp": 1656000,
+      "momentary": -12.998
+    },
+    "weight": 0.1083
+  },
+  {
+    "index": 38,
+    "timestampStart": 170960,
+    "timestampEnd": 175000,
+    "smpteStart": "00:02:50:24",
+    "smpteEnd": "00:02:55:00",
+    "frameStart": 4274,
+    "frameEnd": 4375,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 175000,
+    "breakTime": "00:02:55",
+    "loudness": {
+      "timestamp": 175000,
+      "momentary": -13.026
+    },
+    "weight": 0.1085
+  },
+  {
+    "index": 39,
+    "timestampStart": 175040,
+    "timestampEnd": 175920,
+    "smpteStart": "00:02:55:01",
+    "smpteEnd": "00:02:55:23",
+    "frameStart": 4376,
+    "frameEnd": 4398,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 175040,
+    "breakTime": "00:02:55",
+    "loudness": {
+      "timestamp": 175000,
+      "momentary": -13.026
+    },
+    "weight": 0.1085
+  },
+  {
+    "index": 40,
+    "timestampStart": 175960,
+    "timestampEnd": 177240,
+    "smpteStart": "00:02:55:24",
+    "smpteEnd": "00:02:57:06",
+    "frameStart": 4399,
+    "frameEnd": 4431,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 175960,
+    "breakTime": "00:02:55",
+    "loudness": {
+      "timestamp": 175000,
+      "momentary": -13.026
+    },
+    "weight": 0.1085
+  },
+  {
+    "index": 41,
+    "timestampStart": 177280,
+    "timestampEnd": 179120,
+    "smpteStart": "00:02:57:07",
+    "smpteEnd": "00:02:59:03",
+    "frameStart": 4432,
+    "frameEnd": 4478,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 177280,
+    "breakTime": "00:02:57",
+    "loudness": {
+      "timestamp": 177000,
+      "momentary": -13.026
+    },
+    "weight": 0.1085
+  },
+  {
+    "index": 81,
+    "timestampStart": 296760,
+    "timestampEnd": 313640,
+    "smpteStart": "00:04:56:19",
+    "smpteEnd": "00:05:13:16",
+    "frameStart": 7419,
+    "frameEnd": 7841,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 313640,
+    "breakTime": "00:05:13",
+    "loudness": {
+      "timestamp": 313000,
+      "momentary": -13.134
+    },
+    "weight": 0.1095
+  },
+  {
+    "index": 82,
+    "timestampStart": 313680,
+    "timestampEnd": 317400,
+    "smpteStart": "00:05:13:17",
+    "smpteEnd": "00:05:17:10",
+    "frameStart": 7842,
+    "frameEnd": 7935,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 313680,
+    "breakTime": "00:05:13",
+    "loudness": {
+      "timestamp": 313000,
+      "momentary": -13.134
+    },
+    "weight": 0.1095
+  },
+  {
+    "index": 352,
+    "timestampStart": 1660160,
+    "timestampEnd": 1661120,
+    "smpteStart": "00:27:40:04",
+    "smpteEnd": "00:27:41:03",
+    "frameStart": 41504,
+    "frameEnd": 41528,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1660160,
+    "breakTime": "00:27:40",
+    "loudness": {
+      "timestamp": 1660000,
+      "momentary": -13.192
+    },
+    "weight": 0.1099
+  },
+  {
+    "index": 291,
+    "timestampStart": 1441160,
+    "timestampEnd": 1444840,
+    "smpteStart": "00:24:01:04",
+    "smpteEnd": "00:24:04:21",
+    "frameStart": 36029,
+    "frameEnd": 36121,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1444840,
+    "breakTime": "00:24:04",
+    "loudness": {
+      "timestamp": 1444000,
+      "momentary": -13.226
+    },
+    "weight": 0.1102
+  },
+  {
+    "index": 292,
+    "timestampStart": 1444880,
+    "timestampEnd": 1445280,
+    "smpteStart": "00:24:04:22",
+    "smpteEnd": "00:24:05:07",
+    "frameStart": 36122,
+    "frameEnd": 36132,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1444880,
+    "breakTime": "00:24:04",
+    "loudness": {
+      "timestamp": 1444000,
+      "momentary": -13.226
+    },
+    "weight": 0.1102
+  },
+  {
+    "index": 293,
+    "timestampStart": 1445320,
+    "timestampEnd": 1449360,
+    "smpteStart": "00:24:05:08",
+    "smpteEnd": "00:24:09:09",
+    "frameStart": 36133,
+    "frameEnd": 36234,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1445320,
+    "breakTime": "00:24:05",
+    "loudness": {
+      "timestamp": 1445000,
+      "momentary": -13.226
+    },
+    "weight": 0.1102
+  },
+  {
+    "index": 192,
+    "timestampStart": 951600,
+    "timestampEnd": 956480,
+    "smpteStart": "00:15:51:15",
+    "smpteEnd": "00:15:56:12",
+    "frameStart": 23790,
+    "frameEnd": 23912,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 956480,
+    "breakTime": "00:15:56",
+    "loudness": {
+      "timestamp": 956000,
+      "momentary": -13.274
+    },
+    "weight": 0.1106
+  },
+  {
+    "index": 193,
+    "timestampStart": 956520,
+    "timestampEnd": 961280,
+    "smpteStart": "00:15:56:13",
+    "smpteEnd": "00:16:01:07",
+    "frameStart": 23913,
+    "frameEnd": 24032,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 956520,
+    "breakTime": "00:15:56",
+    "loudness": {
+      "timestamp": 956000,
+      "momentary": -13.274
+    },
+    "weight": 0.1106
+  },
+  {
+    "index": 61,
+    "timestampStart": 231160,
+    "timestampEnd": 234920,
+    "smpteStart": "00:03:51:04",
+    "smpteEnd": "00:03:54:23",
+    "frameStart": 5779,
+    "frameEnd": 5873,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 234920,
+    "breakTime": "00:03:54",
+    "loudness": {
+      "timestamp": 234000,
+      "momentary": -13.296
+    },
+    "weight": 0.1108
+  },
+  {
+    "index": 62,
+    "timestampStart": 234960,
+    "timestampEnd": 239400,
+    "smpteStart": "00:03:54:24",
+    "smpteEnd": "00:03:59:10",
+    "frameStart": 5874,
+    "frameEnd": 5985,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 234960,
+    "breakTime": "00:03:54",
+    "loudness": {
+      "timestamp": 234000,
+      "momentary": -13.296
+    },
+    "weight": 0.1108
+  },
+  {
+    "index": 368,
+    "timestampStart": 1710040,
+    "timestampEnd": 1711160,
+    "smpteStart": "00:28:30:01",
+    "smpteEnd": "00:28:31:04",
+    "frameStart": 42751,
+    "frameEnd": 42779,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1711160,
+    "breakTime": "00:28:31",
+    "loudness": {
+      "timestamp": 1711000,
+      "momentary": -13.381
+    },
+    "weight": 0.1115
+  },
+  {
+    "index": 369,
+    "timestampStart": 1711200,
+    "timestampEnd": 1711960,
+    "smpteStart": "00:28:31:05",
+    "smpteEnd": "00:28:31:24",
+    "frameStart": 42780,
+    "frameEnd": 42799,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1711200,
+    "breakTime": "00:28:31",
+    "loudness": {
+      "timestamp": 1711000,
+      "momentary": -13.381
+    },
+    "weight": 0.1115
+  },
+  {
+    "index": 370,
+    "timestampStart": 1712000,
+    "timestampEnd": 1712800,
+    "smpteStart": "00:28:32:00",
+    "smpteEnd": "00:28:32:20",
+    "frameStart": 42800,
+    "frameEnd": 42820,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1712000,
+    "breakTime": "00:28:32",
+    "loudness": {
+      "timestamp": 1712000,
+      "momentary": -13.381
+    },
+    "weight": 0.1115
+  },
+  {
+    "index": 69,
+    "timestampStart": 256840,
+    "timestampEnd": 259800,
+    "smpteStart": "00:04:16:21",
+    "smpteEnd": "00:04:19:20",
+    "frameStart": 6421,
+    "frameEnd": 6495,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 259800,
+    "breakTime": "00:04:19",
+    "loudness": {
+      "timestamp": 259000,
+      "momentary": -13.414
+    },
+    "weight": 0.1118
+  },
+  {
+    "index": 70,
+    "timestampStart": 259840,
+    "timestampEnd": 266840,
+    "smpteStart": "00:04:19:21",
+    "smpteEnd": "00:04:26:21",
+    "frameStart": 6496,
+    "frameEnd": 6671,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 259840,
+    "breakTime": "00:04:19",
+    "loudness": {
+      "timestamp": 259000,
+      "momentary": -13.414
+    },
+    "weight": 0.1118
+  },
+  {
+    "index": 210,
+    "timestampStart": 1050200,
+    "timestampEnd": 1053720,
+    "smpteStart": "00:17:30:05",
+    "smpteEnd": "00:17:33:18",
+    "frameStart": 26255,
+    "frameEnd": 26343,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1053720,
+    "breakTime": "00:17:33",
+    "loudness": {
+      "timestamp": 1053000,
+      "momentary": -13.479
+    },
+    "weight": 0.1123
+  },
+  {
+    "index": 211,
+    "timestampStart": 1053760,
+    "timestampEnd": 1059960,
+    "smpteStart": "00:17:33:19",
+    "smpteEnd": "00:17:39:24",
+    "frameStart": 26344,
+    "frameEnd": 26499,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1053760,
+    "breakTime": "00:17:33",
+    "loudness": {
+      "timestamp": 1053000,
+      "momentary": -13.479
+    },
+    "weight": 0.1123
+  },
+  {
+    "index": 251,
+    "timestampStart": 1245080,
+    "timestampEnd": 1253240,
+    "smpteStart": "00:20:45:02",
+    "smpteEnd": "00:20:53:06",
+    "frameStart": 31127,
+    "frameEnd": 31331,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1253240,
+    "breakTime": "00:20:53",
+    "loudness": {
+      "timestamp": 1253000,
+      "momentary": -13.498
+    },
+    "weight": 0.1125
+  },
+  {
+    "index": 252,
+    "timestampStart": 1253280,
+    "timestampEnd": 1256920,
+    "smpteStart": "00:20:53:07",
+    "smpteEnd": "00:20:56:23",
+    "frameStart": 31332,
+    "frameEnd": 31423,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1253280,
+    "breakTime": "00:20:53",
+    "loudness": {
+      "timestamp": 1253000,
+      "momentary": -13.498
+    },
+    "weight": 0.1125
+  },
+  {
+    "index": 194,
+    "timestampStart": 961320,
+    "timestampEnd": 966280,
+    "smpteStart": "00:16:01:08",
+    "smpteEnd": "00:16:06:07",
+    "frameStart": 24033,
+    "frameEnd": 24157,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 966280,
+    "breakTime": "00:16:06",
+    "loudness": {
+      "timestamp": 966000,
+      "momentary": -13.512
+    },
+    "weight": 0.1126
+  },
+  {
+    "index": 195,
+    "timestampStart": 966320,
+    "timestampEnd": 971600,
+    "smpteStart": "00:16:06:08",
+    "smpteEnd": "00:16:11:15",
+    "frameStart": 24158,
+    "frameEnd": 24290,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 966320,
+    "breakTime": "00:16:06",
+    "loudness": {
+      "timestamp": 966000,
+      "momentary": -13.512
+    },
+    "weight": 0.1126
+  },
+  {
+    "index": 245,
+    "timestampStart": 1224160,
+    "timestampEnd": 1228520,
+    "smpteStart": "00:20:24:04",
+    "smpteEnd": "00:20:28:13",
+    "frameStart": 30604,
+    "frameEnd": 30713,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1228520,
+    "breakTime": "00:20:28",
+    "loudness": {
+      "timestamp": 1228000,
+      "momentary": -13.551
+    },
+    "weight": 0.1129
+  },
+  {
+    "index": 246,
+    "timestampStart": 1228560,
+    "timestampEnd": 1232320,
+    "smpteStart": "00:20:28:14",
+    "smpteEnd": "00:20:32:08",
+    "frameStart": 30714,
+    "frameEnd": 30808,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1228560,
+    "breakTime": "00:20:28",
+    "loudness": {
+      "timestamp": 1228000,
+      "momentary": -13.551
+    },
+    "weight": 0.1129
+  },
+  {
+    "index": 249,
+    "timestampStart": 1238040,
+    "timestampEnd": 1241720,
+    "smpteStart": "00:20:38:01",
+    "smpteEnd": "00:20:41:18",
+    "frameStart": 30951,
+    "frameEnd": 31043,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1241720,
+    "breakTime": "00:20:41",
+    "loudness": {
+      "timestamp": 1241000,
+      "momentary": -13.553
+    },
+    "weight": 0.1129
+  },
+  {
+    "index": 250,
+    "timestampStart": 1241760,
+    "timestampEnd": 1245040,
+    "smpteStart": "00:20:41:19",
+    "smpteEnd": "00:20:45:01",
+    "frameStart": 31044,
+    "frameEnd": 31126,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1241760,
+    "breakTime": "00:20:41",
+    "loudness": {
+      "timestamp": 1241000,
+      "momentary": -13.553
+    },
+    "weight": 0.1129
+  },
+  {
+    "index": 323,
+    "timestampStart": 1559560,
+    "timestampEnd": 1565240,
+    "smpteStart": "00:25:59:14",
+    "smpteEnd": "00:26:05:06",
+    "frameStart": 38989,
+    "frameEnd": 39131,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1565240,
+    "breakTime": "00:26:05",
+    "loudness": {
+      "timestamp": 1565000,
+      "momentary": -13.667
+    },
+    "weight": 0.1139
+  },
+  {
+    "index": 324,
+    "timestampStart": 1565280,
+    "timestampEnd": 1570320,
+    "smpteStart": "00:26:05:07",
+    "smpteEnd": "00:26:10:08",
+    "frameStart": 39132,
+    "frameEnd": 39258,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1565280,
+    "breakTime": "00:26:05",
+    "loudness": {
+      "timestamp": 1565000,
+      "momentary": -13.667
+    },
+    "weight": 0.1139
+  },
+  {
+    "index": 386,
+    "timestampStart": 1752720,
+    "timestampEnd": 1755800,
+    "smpteStart": "00:29:12:18",
+    "smpteEnd": "00:29:15:20",
+    "frameStart": 43818,
+    "frameEnd": 43895,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1755800,
+    "breakTime": "00:29:15",
+    "loudness": {
+      "timestamp": 1755000,
+      "momentary": -13.712
+    },
+    "weight": 0.1143
+  },
+  {
+    "index": 387,
+    "timestampStart": 1755840,
+    "timestampEnd": 1756680,
+    "smpteStart": "00:29:15:21",
+    "smpteEnd": "00:29:16:17",
+    "frameStart": 43896,
+    "frameEnd": 43917,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1755840,
+    "breakTime": "00:29:15",
+    "loudness": {
+      "timestamp": 1755000,
+      "momentary": -13.712
+    },
+    "weight": 0.1143
+  },
+  {
+    "index": 163,
+    "timestampStart": 785080,
+    "timestampEnd": 790200,
+    "smpteStart": "00:13:05:02",
+    "smpteEnd": "00:13:10:05",
+    "frameStart": 19627,
+    "frameEnd": 19755,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 790200,
+    "breakTime": "00:13:10",
+    "loudness": {
+      "timestamp": 790000,
+      "momentary": -13.725
+    },
+    "weight": 0.1144
+  },
+  {
+    "index": 164,
+    "timestampStart": 790240,
+    "timestampEnd": 794400,
+    "smpteStart": "00:13:10:06",
+    "smpteEnd": "00:13:14:10",
+    "frameStart": 19756,
+    "frameEnd": 19860,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 790240,
+    "breakTime": "00:13:10",
+    "loudness": {
+      "timestamp": 790000,
+      "momentary": -13.725
+    },
+    "weight": 0.1144
+  },
+  {
+    "index": 376,
+    "timestampStart": 1730160,
+    "timestampEnd": 1733800,
+    "smpteStart": "00:28:50:04",
+    "smpteEnd": "00:28:53:20",
+    "frameStart": 43254,
+    "frameEnd": 43345,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1733800,
+    "breakTime": "00:28:53",
+    "loudness": {
+      "timestamp": 1733000,
+      "momentary": -13.746
+    },
+    "weight": 0.1145
+  },
+  {
+    "index": 377,
+    "timestampStart": 1733840,
+    "timestampEnd": 1734440,
+    "smpteStart": "00:28:53:21",
+    "smpteEnd": "00:28:54:11",
+    "frameStart": 43346,
+    "frameEnd": 43361,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1733840,
+    "breakTime": "00:28:53",
+    "loudness": {
+      "timestamp": 1733000,
+      "momentary": -13.746
+    },
+    "weight": 0.1145
+  },
+  {
+    "index": 378,
+    "timestampStart": 1734480,
+    "timestampEnd": 1736240,
+    "smpteStart": "00:28:54:12",
+    "smpteEnd": "00:28:56:06",
+    "frameStart": 43362,
+    "frameEnd": 43406,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1734480,
+    "breakTime": "00:28:54",
+    "loudness": {
+      "timestamp": 1734000,
+      "momentary": -13.746
+    },
+    "weight": 0.1145
+  },
+  {
+    "index": 330,
+    "timestampStart": 1579080,
+    "timestampEnd": 1579120,
+    "smpteStart": "00:26:19:02",
+    "smpteEnd": "00:26:19:03",
+    "frameStart": 39477,
+    "frameEnd": 39478,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1579080,
+    "breakTime": "00:26:19",
+    "loudness": {
+      "timestamp": 1579000,
+      "momentary": -13.844
+    },
+    "weight": 0.1154
+  },
+  {
+    "index": 331,
+    "timestampStart": 1579160,
+    "timestampEnd": 1582960,
+    "smpteStart": "00:26:19:04",
+    "smpteEnd": "00:26:22:24",
+    "frameStart": 39479,
+    "frameEnd": 39574,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1579160,
+    "breakTime": "00:26:19",
+    "loudness": {
+      "timestamp": 1579000,
+      "momentary": -13.844
+    },
+    "weight": 0.1154
+  },
+  {
+    "index": 356,
+    "timestampStart": 1666840,
+    "timestampEnd": 1670000,
+    "smpteStart": "00:27:46:21",
+    "smpteEnd": "00:27:50:00",
+    "frameStart": 41671,
+    "frameEnd": 41750,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1670000,
+    "breakTime": "00:27:50",
+    "loudness": {
+      "timestamp": 1670000,
+      "momentary": -13.915
+    },
+    "weight": 0.116
+  },
+  {
+    "index": 357,
+    "timestampStart": 1670040,
+    "timestampEnd": 1677080,
+    "smpteStart": "00:27:50:01",
+    "smpteEnd": "00:27:57:02",
+    "frameStart": 41751,
+    "frameEnd": 41927,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1670040,
+    "breakTime": "00:27:50",
+    "loudness": {
+      "timestamp": 1670000,
+      "momentary": -13.915
+    },
+    "weight": 0.116
+  },
+  {
+    "index": 332,
+    "timestampStart": 1583000,
+    "timestampEnd": 1589760,
+    "smpteStart": "00:26:23:00",
+    "smpteEnd": "00:26:29:19",
+    "frameStart": 39575,
+    "frameEnd": 39744,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1583000,
+    "breakTime": "00:26:23",
+    "loudness": {
+      "timestamp": 1583000,
+      "momentary": -13.929
+    },
+    "weight": 0.1161
+  },
+  {
+    "index": 165,
+    "timestampStart": 794440,
+    "timestampEnd": 797760,
+    "smpteStart": "00:13:14:11",
+    "smpteEnd": "00:13:17:19",
+    "frameStart": 19861,
+    "frameEnd": 19944,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 797760,
+    "breakTime": "00:13:17",
+    "loudness": {
+      "timestamp": 797000,
+      "momentary": -13.963
+    },
+    "weight": 0.1164
+  },
+  {
+    "index": 166,
+    "timestampStart": 797800,
+    "timestampEnd": 803920,
+    "smpteStart": "00:13:17:20",
+    "smpteEnd": "00:13:23:23",
+    "frameStart": 19945,
+    "frameEnd": 20098,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 797800,
+    "breakTime": "00:13:17",
+    "loudness": {
+      "timestamp": 797000,
+      "momentary": -13.963
+    },
+    "weight": 0.1164
+  },
+  {
+    "index": 399,
+    "timestampStart": 1780280,
+    "timestampEnd": 1783240,
+    "smpteStart": "00:29:40:07",
+    "smpteEnd": "00:29:43:06",
+    "frameStart": 44507,
+    "frameEnd": 44581,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1783240,
+    "breakTime": "00:29:43",
+    "loudness": {
+      "timestamp": 1783000,
+      "momentary": -14.055
+    },
+    "weight": 0.1171
+  },
+  {
+    "index": 400,
+    "timestampStart": 1783280,
+    "timestampEnd": 1786520,
+    "smpteStart": "00:29:43:07",
+    "smpteEnd": "00:29:46:13",
+    "frameStart": 44582,
+    "frameEnd": 44663,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1783280,
+    "breakTime": "00:29:43",
+    "loudness": {
+      "timestamp": 1783000,
+      "momentary": -14.055
+    },
+    "weight": 0.1171
+  },
+  {
+    "index": 149,
+    "timestampStart": 730360,
+    "timestampEnd": 731760,
+    "smpteStart": "00:12:10:09",
+    "smpteEnd": "00:12:11:19",
+    "frameStart": 18259,
+    "frameEnd": 18294,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 730360,
+    "breakTime": "00:12:10",
+    "loudness": {
+      "timestamp": 730000,
+      "momentary": -14.07
+    },
+    "weight": 0.1173
+  },
+  {
+    "index": 23,
+    "timestampStart": 91080,
+    "timestampEnd": 93960,
+    "smpteStart": "00:01:31:02",
+    "smpteEnd": "00:01:33:24",
+    "frameStart": 2277,
+    "frameEnd": 2349,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 93960,
+    "breakTime": "00:01:33",
+    "loudness": {
+      "timestamp": 93000,
+      "momentary": -14.097
+    },
+    "weight": 0.1175
+  },
+  {
+    "index": 52,
+    "timestampStart": 206720,
+    "timestampEnd": 210000,
+    "smpteStart": "00:03:26:18",
+    "smpteEnd": "00:03:30:00",
+    "frameStart": 5168,
+    "frameEnd": 5250,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 210000,
+    "breakTime": "00:03:30",
+    "loudness": {
+      "timestamp": 210000,
+      "momentary": -14.108
+    },
+    "weight": 0.1176
+  },
+  {
+    "index": 53,
+    "timestampStart": 210040,
+    "timestampEnd": 211560,
+    "smpteStart": "00:03:30:01",
+    "smpteEnd": "00:03:31:14",
+    "frameStart": 5251,
+    "frameEnd": 5289,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 210040,
+    "breakTime": "00:03:30",
+    "loudness": {
+      "timestamp": 210000,
+      "momentary": -14.108
+    },
+    "weight": 0.1176
+  },
+  {
+    "index": 444,
+    "timestampStart": 1864880,
+    "timestampEnd": 1868240,
+    "smpteStart": "00:31:04:22",
+    "smpteEnd": "00:31:08:06",
+    "frameStart": 46622,
+    "frameEnd": 46706,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1864880,
+    "breakTime": "00:31:04",
+    "loudness": {
+      "timestamp": 1864000,
+      "momentary": -14.125
+    },
+    "weight": 0.1177
+  },
+  {
+    "index": 96,
+    "timestampStart": 393560,
+    "timestampEnd": 412600,
+    "smpteStart": "00:06:33:14",
+    "smpteEnd": "00:06:52:15",
+    "frameStart": 9839,
+    "frameEnd": 10315,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 412600,
+    "breakTime": "00:06:52",
+    "loudness": {
+      "timestamp": 412000,
+      "momentary": -14.25
+    },
+    "weight": 0.1187
+  },
+  {
+    "index": 97,
+    "timestampStart": 412640,
+    "timestampEnd": 423200,
+    "smpteStart": "00:06:52:16",
+    "smpteEnd": "00:07:03:05",
+    "frameStart": 10316,
+    "frameEnd": 10580,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 412640,
+    "breakTime": "00:06:52",
+    "loudness": {
+      "timestamp": 412000,
+      "momentary": -14.25
+    },
+    "weight": 0.1187
+  },
+  {
+    "index": 208,
+    "timestampStart": 1027160,
+    "timestampEnd": 1045880,
+    "smpteStart": "00:17:07:04",
+    "smpteEnd": "00:17:25:22",
+    "frameStart": 25679,
+    "frameEnd": 26147,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1045880,
+    "breakTime": "00:17:25",
+    "loudness": {
+      "timestamp": 1045000,
+      "momentary": -14.247
+    },
+    "weight": 0.1187
+  },
+  {
+    "index": 209,
+    "timestampStart": 1045920,
+    "timestampEnd": 1050160,
+    "smpteStart": "00:17:25:23",
+    "smpteEnd": "00:17:30:04",
+    "frameStart": 26148,
+    "frameEnd": 26254,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1045920,
+    "breakTime": "00:17:25",
+    "loudness": {
+      "timestamp": 1045000,
+      "momentary": -14.247
+    },
+    "weight": 0.1187
+  },
+  {
+    "index": 233,
+    "timestampStart": 1150040,
+    "timestampEnd": 1153400,
+    "smpteStart": "00:19:10:01",
+    "smpteEnd": "00:19:13:10",
+    "frameStart": 28751,
+    "frameEnd": 28835,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1153400,
+    "breakTime": "00:19:13",
+    "loudness": {
+      "timestamp": 1153000,
+      "momentary": -14.257
+    },
+    "weight": 0.1188
+  },
+  {
+    "index": 234,
+    "timestampStart": 1153440,
+    "timestampEnd": 1156960,
+    "smpteStart": "00:19:13:11",
+    "smpteEnd": "00:19:16:24",
+    "frameStart": 28836,
+    "frameEnd": 28924,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1153440,
+    "breakTime": "00:19:13",
+    "loudness": {
+      "timestamp": 1153000,
+      "momentary": -14.257
+    },
+    "weight": 0.1188
+  },
+  {
+    "index": 106,
+    "timestampStart": 466240,
+    "timestampEnd": 472200,
+    "smpteStart": "00:07:46:06",
+    "smpteEnd": "00:07:52:05",
+    "frameStart": 11656,
+    "frameEnd": 11805,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 472200,
+    "breakTime": "00:07:52",
+    "loudness": {
+      "timestamp": 472000,
+      "momentary": -14.287
+    },
+    "weight": 0.1191
+  },
+  {
+    "index": 107,
+    "timestampStart": 472240,
+    "timestampEnd": 476200,
+    "smpteStart": "00:07:52:06",
+    "smpteEnd": "00:07:56:05",
+    "frameStart": 11806,
+    "frameEnd": 11905,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 472240,
+    "breakTime": "00:07:52",
+    "loudness": {
+      "timestamp": 472000,
+      "momentary": -14.287
+    },
+    "weight": 0.1191
+  },
+  {
+    "index": 42,
+    "timestampStart": 179160,
+    "timestampEnd": 180640,
+    "smpteStart": "00:02:59:04",
+    "smpteEnd": "00:03:00:16",
+    "frameStart": 4479,
+    "frameEnd": 4516,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 180640,
+    "breakTime": "00:03:00",
+    "loudness": {
+      "timestamp": 180000,
+      "momentary": -14.575
+    },
+    "weight": 0.1215
+  },
+  {
+    "index": 43,
+    "timestampStart": 180680,
+    "timestampEnd": 182400,
+    "smpteStart": "00:03:00:17",
+    "smpteEnd": "00:03:02:10",
+    "frameStart": 4517,
+    "frameEnd": 4560,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 180680,
+    "breakTime": "00:03:00",
+    "loudness": {
+      "timestamp": 180000,
+      "momentary": -14.575
+    },
+    "weight": 0.1215
+  },
+  {
+    "index": 262,
+    "timestampStart": 1290040,
+    "timestampEnd": 1291840,
+    "smpteStart": "00:21:30:01",
+    "smpteEnd": "00:21:31:21",
+    "frameStart": 32251,
+    "frameEnd": 32296,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1291840,
+    "breakTime": "00:21:31",
+    "loudness": {
+      "timestamp": 1291000,
+      "momentary": -14.586
+    },
+    "weight": 0.1216
+  },
+  {
+    "index": 263,
+    "timestampStart": 1291880,
+    "timestampEnd": 1295400,
+    "smpteStart": "00:21:31:22",
+    "smpteEnd": "00:21:35:10",
+    "frameStart": 32297,
+    "frameEnd": 32385,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1291880,
+    "breakTime": "00:21:31",
+    "loudness": {
+      "timestamp": 1291000,
+      "momentary": -14.586
+    },
+    "weight": 0.1216
+  },
+  {
+    "index": 373,
+    "timestampStart": 1714880,
+    "timestampEnd": 1723960,
+    "smpteStart": "00:28:34:22",
+    "smpteEnd": "00:28:43:24",
+    "frameStart": 42872,
+    "frameEnd": 43099,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1723960,
+    "breakTime": "00:28:43",
+    "loudness": {
+      "timestamp": 1723000,
+      "momentary": -14.762
+    },
+    "weight": 0.123
+  },
+  {
+    "index": 374,
+    "timestampStart": 1724000,
+    "timestampEnd": 1727440,
+    "smpteStart": "00:28:44:00",
+    "smpteEnd": "00:28:47:11",
+    "frameStart": 43100,
+    "frameEnd": 43186,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1724000,
+    "breakTime": "00:28:44",
+    "loudness": {
+      "timestamp": 1724000,
+      "momentary": -14.762
+    },
+    "weight": 0.123
+  },
+  {
+    "index": 24,
+    "timestampStart": 94000,
+    "timestampEnd": 98440,
+    "smpteStart": "00:01:34:00",
+    "smpteEnd": "00:01:38:11",
+    "frameStart": 2350,
+    "frameEnd": 2461,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 94000,
+    "breakTime": "00:01:34",
+    "loudness": {
+      "timestamp": 94000,
+      "momentary": -14.777
+    },
+    "weight": 0.1231
+  },
+  {
+    "index": 147,
+    "timestampStart": 721160,
+    "timestampEnd": 729120,
+    "smpteStart": "00:12:01:04",
+    "smpteEnd": "00:12:09:03",
+    "frameStart": 18029,
+    "frameEnd": 18228,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 729120,
+    "breakTime": "00:12:09",
+    "loudness": {
+      "timestamp": 729000,
+      "momentary": -14.889
+    },
+    "weight": 0.1241
+  },
+  {
+    "index": 148,
+    "timestampStart": 729160,
+    "timestampEnd": 730320,
+    "smpteStart": "00:12:09:04",
+    "smpteEnd": "00:12:10:08",
+    "frameStart": 18229,
+    "frameEnd": 18258,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 729160,
+    "breakTime": "00:12:09",
+    "loudness": {
+      "timestamp": 729000,
+      "momentary": -14.889
+    },
+    "weight": 0.1241
+  },
+  {
+    "index": 185,
+    "timestampStart": 914160,
+    "timestampEnd": 921640,
+    "smpteStart": "00:15:14:04",
+    "smpteEnd": "00:15:21:16",
+    "frameStart": 22854,
+    "frameEnd": 23041,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 921640,
+    "breakTime": "00:15:21",
+    "loudness": {
+      "timestamp": 921000,
+      "momentary": -14.906
+    },
+    "weight": 0.1242
+  },
+  {
+    "index": 186,
+    "timestampStart": 921680,
+    "timestampEnd": 927720,
+    "smpteStart": "00:15:21:17",
+    "smpteEnd": "00:15:27:18",
+    "frameStart": 23042,
+    "frameEnd": 23193,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 921680,
+    "breakTime": "00:15:21",
+    "loudness": {
+      "timestamp": 921000,
+      "momentary": -14.906
+    },
+    "weight": 0.1242
+  },
+  {
+    "index": 302,
+    "timestampStart": 1493880,
+    "timestampEnd": 1498840,
+    "smpteStart": "00:24:53:22",
+    "smpteEnd": "00:24:58:21",
+    "frameStart": 37347,
+    "frameEnd": 37471,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1498840,
+    "breakTime": "00:24:58",
+    "loudness": {
+      "timestamp": 1498000,
+      "momentary": -15.038
+    },
+    "weight": 0.1253
+  },
+  {
+    "index": 303,
+    "timestampStart": 1498880,
+    "timestampEnd": 1501320,
+    "smpteStart": "00:24:58:22",
+    "smpteEnd": "00:25:01:08",
+    "frameStart": 37472,
+    "frameEnd": 37533,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1498880,
+    "breakTime": "00:24:58",
+    "loudness": {
+      "timestamp": 1498000,
+      "momentary": -15.038
+    },
+    "weight": 0.1253
+  },
+  {
+    "index": 392,
+    "timestampStart": 1760680,
+    "timestampEnd": 1769000,
+    "smpteStart": "00:29:20:17",
+    "smpteEnd": "00:29:29:00",
+    "frameStart": 44017,
+    "frameEnd": 44225,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1760680,
+    "breakTime": "00:29:20",
+    "loudness": {
+      "timestamp": 1760000,
+      "momentary": -15.33
+    },
+    "weight": 0.1278
+  },
+  {
+    "index": 64,
+    "timestampStart": 242200,
+    "timestampEnd": 246360,
+    "smpteStart": "00:04:02:05",
+    "smpteEnd": "00:04:06:09",
+    "frameStart": 6055,
+    "frameEnd": 6159,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 246360,
+    "breakTime": "00:04:06",
+    "loudness": {
+      "timestamp": 246000,
+      "momentary": -15.48
+    },
+    "weight": 0.129
+  },
+  {
+    "index": 65,
+    "timestampStart": 246400,
+    "timestampEnd": 249960,
+    "smpteStart": "00:04:06:10",
+    "smpteEnd": "00:04:09:24",
+    "frameStart": 6160,
+    "frameEnd": 6249,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 246400,
+    "breakTime": "00:04:06",
+    "loudness": {
+      "timestamp": 246000,
+      "momentary": -15.48
+    },
+    "weight": 0.129
+  },
+  {
+    "index": 116,
+    "timestampStart": 532240,
+    "timestampEnd": 541000,
+    "smpteStart": "00:08:52:06",
+    "smpteEnd": "00:09:01:00",
+    "frameStart": 13306,
+    "frameEnd": 13525,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 541000,
+    "breakTime": "00:09:01",
+    "loudness": {
+      "timestamp": 541000,
+      "momentary": -15.701
+    },
+    "weight": 0.1308
+  },
+  {
+    "index": 117,
+    "timestampStart": 541040,
+    "timestampEnd": 546360,
+    "smpteStart": "00:09:01:01",
+    "smpteEnd": "00:09:06:09",
+    "frameStart": 13526,
+    "frameEnd": 13659,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 541040,
+    "breakTime": "00:09:01",
+    "loudness": {
+      "timestamp": 541000,
+      "momentary": -15.701
+    },
+    "weight": 0.1308
+  },
+  {
+    "index": 272,
+    "timestampStart": 1332600,
+    "timestampEnd": 1342080,
+    "smpteStart": "00:22:12:15",
+    "smpteEnd": "00:22:22:02",
+    "frameStart": 33315,
+    "frameEnd": 33552,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1342080,
+    "breakTime": "00:22:22",
+    "loudness": {
+      "timestamp": 1342000,
+      "momentary": -15.697
+    },
+    "weight": 0.1308
+  },
+  {
+    "index": 273,
+    "timestampStart": 1342120,
+    "timestampEnd": 1345240,
+    "smpteStart": "00:22:22:03",
+    "smpteEnd": "00:22:25:06",
+    "frameStart": 33553,
+    "frameEnd": 33631,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1342120,
+    "breakTime": "00:22:22",
+    "loudness": {
+      "timestamp": 1342000,
+      "momentary": -15.697
+    },
+    "weight": 0.1308
+  },
+  {
+    "index": 7,
+    "timestampStart": 29920,
+    "timestampEnd": 34240,
+    "smpteStart": "00:00:29:23",
+    "smpteEnd": "00:00:34:06",
+    "frameStart": 748,
+    "frameEnd": 856,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 34240,
+    "breakTime": "00:00:34",
+    "loudness": {
+      "timestamp": 34000,
+      "momentary": -15.96
+    },
+    "weight": 0.133
+  },
+  {
+    "index": 8,
+    "timestampStart": 34280,
+    "timestampEnd": 38360,
+    "smpteStart": "00:00:34:07",
+    "smpteEnd": "00:00:38:09",
+    "frameStart": 857,
+    "frameEnd": 959,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 34280,
+    "breakTime": "00:00:34",
+    "loudness": {
+      "timestamp": 34000,
+      "momentary": -15.96
+    },
+    "weight": 0.133
+  },
+  {
+    "index": 32,
+    "timestampStart": 117480,
+    "timestampEnd": 120400,
+    "smpteStart": "00:01:57:12",
+    "smpteEnd": "00:02:00:10",
+    "frameStart": 2937,
+    "frameEnd": 3010,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 120400,
+    "breakTime": "00:02:00",
+    "loudness": {
+      "timestamp": 120000,
+      "momentary": -16.118
+    },
+    "weight": 0.1343
+  },
+  {
+    "index": 33,
+    "timestampStart": 120440,
+    "timestampEnd": 127160,
+    "smpteStart": "00:02:00:11",
+    "smpteEnd": "00:02:07:04",
+    "frameStart": 3011,
+    "frameEnd": 3179,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 120440,
+    "breakTime": "00:02:00",
+    "loudness": {
+      "timestamp": 120000,
+      "momentary": -16.118
+    },
+    "weight": 0.1343
+  },
+  {
+    "index": 110,
+    "timestampStart": 497240,
+    "timestampEnd": 501200,
+    "smpteStart": "00:08:17:06",
+    "smpteEnd": "00:08:21:05",
+    "frameStart": 12431,
+    "frameEnd": 12530,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 501200,
+    "breakTime": "00:08:21",
+    "loudness": {
+      "timestamp": 501000,
+      "momentary": -16.285
+    },
+    "weight": 0.1357
+  },
+  {
+    "index": 111,
+    "timestampStart": 501240,
+    "timestampEnd": 505200,
+    "smpteStart": "00:08:21:06",
+    "smpteEnd": "00:08:25:05",
+    "frameStart": 12531,
+    "frameEnd": 12630,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 501240,
+    "breakTime": "00:08:21",
+    "loudness": {
+      "timestamp": 501000,
+      "momentary": -16.285
+    },
+    "weight": 0.1357
+  },
+  {
+    "index": 388,
+    "timestampStart": 1756720,
+    "timestampEnd": 1757360,
+    "smpteStart": "00:29:16:18",
+    "smpteEnd": "00:29:17:09",
+    "frameStart": 43918,
+    "frameEnd": 43934,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1756720,
+    "breakTime": "00:29:16",
+    "loudness": {
+      "timestamp": 1756000,
+      "momentary": -16.995
+    },
+    "weight": 0.1416
+  },
+  {
+    "index": 389,
+    "timestampStart": 1757400,
+    "timestampEnd": 1758120,
+    "smpteStart": "00:29:17:10",
+    "smpteEnd": "00:29:18:03",
+    "frameStart": 43935,
+    "frameEnd": 43953,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1757400,
+    "breakTime": "00:29:17",
+    "loudness": {
+      "timestamp": 1757000,
+      "momentary": -16.995
+    },
+    "weight": 0.1416
+  },
+  {
+    "index": 390,
+    "timestampStart": 1758200,
+    "timestampEnd": 1758240,
+    "smpteStart": "00:29:18:05",
+    "smpteEnd": "00:29:18:06",
+    "frameStart": 43955,
+    "frameEnd": 43956,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1758200,
+    "breakTime": "00:29:18",
+    "loudness": {
+      "timestamp": 1758000,
+      "momentary": -16.995
+    },
+    "weight": 0.1416
+  },
+  {
+    "index": 391,
+    "timestampStart": 1758280,
+    "timestampEnd": 1760640,
+    "smpteStart": "00:29:18:07",
+    "smpteEnd": "00:29:20:16",
+    "frameStart": 43957,
+    "frameEnd": 44016,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1758280,
+    "breakTime": "00:29:18",
+    "loudness": {
+      "timestamp": 1758000,
+      "momentary": -16.995
+    },
+    "weight": 0.1416
+  },
+  {
+    "index": 442,
+    "timestampStart": 1860480,
+    "timestampEnd": 1862160,
+    "smpteStart": "00:31:00:12",
+    "smpteEnd": "00:31:02:04",
+    "frameStart": 46512,
+    "frameEnd": 46554,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1862160,
+    "breakTime": "00:31:02",
+    "loudness": {
+      "timestamp": 1862000,
+      "momentary": -17.01
+    },
+    "weight": 0.1418
+  },
+  {
+    "index": 443,
+    "timestampStart": 1862200,
+    "timestampEnd": 1864840,
+    "smpteStart": "00:31:02:05",
+    "smpteEnd": "00:31:04:21",
+    "frameStart": 46555,
+    "frameEnd": 46621,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1862200,
+    "breakTime": "00:31:02",
+    "loudness": {
+      "timestamp": 1862000,
+      "momentary": -17.01
+    },
+    "weight": 0.1418
+  },
+  {
+    "index": 294,
+    "timestampStart": 1449400,
+    "timestampEnd": 1456640,
+    "smpteStart": "00:24:09:10",
+    "smpteEnd": "00:24:16:16",
+    "frameStart": 36235,
+    "frameEnd": 36416,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 1456640,
+    "breakTime": "00:24:16",
+    "loudness": {
+      "timestamp": 1456000,
+      "momentary": -17.842
+    },
+    "weight": 0.1487
+  },
+  {
+    "index": 295,
+    "timestampStart": 1456680,
+    "timestampEnd": 1463000,
+    "smpteStart": "00:24:16:17",
+    "smpteEnd": "00:24:23:00",
+    "frameStart": 36417,
+    "frameEnd": 36575,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 1456680,
+    "breakTime": "00:24:16",
+    "loudness": {
+      "timestamp": 1456000,
+      "momentary": -17.842
+    },
+    "weight": 0.1487
+  },
+  {
+    "index": 30,
+    "timestampStart": 108960,
+    "timestampEnd": 111880,
+    "smpteStart": "00:01:48:24",
+    "smpteEnd": "00:01:51:22",
+    "frameStart": 2724,
+    "frameEnd": 2797,
+    "breakType": "SEGMENT_END",
+    "breakTimestamp": 111880,
+    "breakTime": "00:01:51",
+    "loudness": {
+      "timestamp": 111000,
+      "momentary": -18.607
+    },
+    "weight": 0.1551
+  },
+  {
+    "index": 31,
+    "timestampStart": 111920,
+    "timestampEnd": 117440,
+    "smpteStart": "00:01:51:23",
+    "smpteEnd": "00:01:57:11",
+    "frameStart": 2798,
+    "frameEnd": 2936,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 111920,
+    "breakTime": "00:01:51",
+    "loudness": {
+      "timestamp": 111000,
+      "momentary": -18.607
+    },
+    "weight": 0.1551
+  },
+  {
+    "index": 36,
+    "timestampStart": 133000,
+    "timestampEnd": 134440,
+    "smpteStart": "00:02:13:00",
+    "smpteEnd": "00:02:14:11",
+    "frameStart": 3325,
+    "frameEnd": 3361,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 133000,
+    "breakTime": "00:02:13",
+    "loudness": {
+      "timestamp": 133000,
+      "momentary": -21.36
+    },
+    "weight": 0.178
+  },
+  {
+    "index": 37,
+    "timestampStart": 134480,
+    "timestampEnd": 170920,
+    "smpteStart": "00:02:14:12",
+    "smpteEnd": "00:02:50:23",
+    "frameStart": 3362,
+    "frameEnd": 4273,
+    "breakType": "SEGMENT_START",
+    "breakTimestamp": 134480,
+    "breakTime": "00:02:14",
+    "loudness": {
+      "timestamp": 134000,
+      "momentary": -21.36
+    },
+    "weight": 0.178
+  }
+]

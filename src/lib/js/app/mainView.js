@@ -66,7 +66,7 @@ const ID_MAIN_CONTAINER = `main-${RANDOM_ID}`;
 const ID_MAIN_TOASTLIST = `main-toast-${RANDOM_ID}`;
 const ID_MAIN_TABLIST = `main-tabs-${RANDOM_ID}`;
 const ID_MAIN_TABCONTENT = `main-content-${RANDOM_ID}`;
-const SOLUTION_URL = 'https://aws.amazon.com/solutions/media2cloud/';
+const SOLUTION_URL = 'https://www.finconsgroup.com/';
 const SOLUTION_ICON = '/images/fincons/logo_fincons.svg';
 
 function parseHashtag(hashtag = '') {
@@ -263,7 +263,7 @@ export default class MainView {
       .css('height', 100)
       .append($('<div/>').addClass('col-12 lead-sm d-flex justify-content-center align-self-center')
         .append($('<span/>').addClass('lead-sm mr-2')
-          .append(`Version ${SolutionManifest.Version} (${SolutionManifest.LastUpdated})`)));
+          .append(``)));
   }
 
   createToastLayer(id = ID_MAIN_TOASTLIST) {

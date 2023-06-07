@@ -334,7 +334,7 @@ export default class Localization {
         },
         Tooltips: {
           /* main view */
-          VisitSolutionPage: 'Visit AWS Solutions page',
+          VisitSolutionPage: 'Visit Fincons official site',
           Logout: 'ready to logout?',
           RemoveMedia: 'Remove media from collection',
           /* analysis component */

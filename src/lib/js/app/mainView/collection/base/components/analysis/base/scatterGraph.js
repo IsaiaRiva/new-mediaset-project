@@ -8,9 +8,34 @@ const EVENT_DATA_SELECTED = 'scatter:data:selected';
 const EVENT_LEGEND_CHANGED = 'scatter:legend:changed';
 
 export default class ScatterGraph extends mxReadable(class {}) {
-  constructor(datasets) {
+  constructor(datasets, type = null) {
     super();
     this.$datasets = datasets.filter(x => x.data.length > 0);
+    if(type === 'customlabel') {
+
+      console.log(`🧊 ~ $datasetsBefore: `, this.$datasets);
+      const confidence = prompt("Please enter minimum confidence for UC2 - Brand recognition:", 60);
+      console.log(`🧊 ~ confidence: `, confidence);
+      this.$datasets = datasets
+				.map(({ data, ...rest }) => {
+					return {
+						...rest,
+						data: data.map(({ details, ...rest }) => {
+							return { ...rest, details: details.filter(({ c }) => c >= confidence || 60) };
+						}),
+					};
+				})
+				.map(({ data, ...rest }) => {
+					return {
+						...rest,
+						data: data.filter(({ details }) => details.length > 0),
+					};
+				})
+				.filter(({ data }) => data.length > 0);  
+    }
+
+
+    console.log(`🧊 ~ $datasets: `, this.$datasets);
     this.$labels = this.$datasets.map((x) =>
       x.label);
     this.$graphContainer = $('<div/>').addClass('scatter-graph')

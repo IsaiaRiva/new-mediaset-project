@@ -1,19 +1,18 @@
 import FsGraph from './fs-graph.js';
 
+const getMinAndRound = v => Math.round((v / 1000 / 60) * 100) / 100;
+const getPercentage = v => Math.round(v * 100 * 100) / 100;
 class FirstFsGraph extends FsGraph {
 	combineDataMaker(data, client) {
-		const getMinAndRound = v => Math.round((v / 1000 / 60) * 100) / 100;
-		const getPercentage = v => Math.round(v * 100 * 100) / 100;
-
 		if (client === 'Amazon') {
 			const { pauseBreaks } = data;
 			const shots = pauseBreaks.map(({ shots }) => shots);
 			const breaks = shots
 				.map(s => s.map(({ breakTimestamp }) => breakTimestamp))
 				.flat();
-			const _breaks = breaks.map(v => getMinAndRound(v));
+			const _breaks = breaks.map(v => getMinAndRound(v)).sort((a, b) => a - b);
 			const weights = shots.map(s => s.map(({ weight }) => weight)).flat();
-			const _weight = weights.map(v => getPercentage(v));
+			const _weight = weights;
 			return _breaks.map((b, i) => [b, 1, _weight[i], breaks[i]]);
 		}
 		if (client === 'CTS') {
@@ -22,10 +21,27 @@ class FirstFsGraph extends FsGraph {
 			return result.map(({ startTime, confidence }) => [
 				getMinAndRound(startTime),
 				1,
-				getPercentage(confidence),
+				confidence,
 				startTime,
 			]);
 		}
+		const breaks = data.map(({ breakTimestamp }) => breakTimestamp);
+		const _breaks = breaks.map(v => getMinAndRound(v)).sort((a, b) => a - b);
+		const weights = data.map(({ weight }) => weight);
+		const _weight = weights.map(v => v);
+		if (client === 'AdvInsertion') {
+			const cta = data
+				.map(({ content_tailored_adv }) => content_tailored_adv)
+				.map(v => Array.from(new Set(v.map(({ catmerc }) => catmerc))));
+			console.log(`🧊 ~ _cta: `, cta);
+			return _breaks.map((b, i) => {
+				return [b, 1, _weight[i], breaks[i], cta[i]];
+			});
+		}
+
+		return _breaks.map((b, i) => {
+			return [b, 1, _weight[i], breaks[i]];
+		});
 	}
 
 	makeFirstGraphOptions(data, client) {
@@ -34,10 +50,10 @@ class FirstFsGraph extends FsGraph {
 		const top = [...combineData];
 		const _top = top.sort((f, s) => s[2] - f[2]).slice(0, 15);
 		console.log(`🧊 ~ combineData: `, combineData);
-		console.log(`🧊 ~ combineDataSort: `, _top);
+		console.log(`🧊 ~ top: `, _top);
 
 		const symbolSize = val => {
-			return val[2];
+			return getPercentage(val[2]);
 		};
 		const shareItemStyle = {
 			shadowBlur: 10,
@@ -46,9 +62,6 @@ class FirstFsGraph extends FsGraph {
 		};
 
 		return {
-			title: {
-				text: 'Smart adv insertion',
-			},
 			legend: {
 				top: 10,
 				right: 20,
@@ -59,25 +72,25 @@ class FirstFsGraph extends FsGraph {
 			},
 			dataset: [
 				{
-					source: [['Time', 'Y', 'Weight', 'BreakInMs'], ...combineData],
+					source: [['Time', 'Y', 'Weight', 'BreakInMs', 'AdvInsertion'], ...combineData],
 				},
 
 				{
 					transform: {
 						type: 'filter',
-						config: { dimension: 'Weight', '>': 0, '<=': 15 },
+						config: { dimension: 'Weight', '>': 0, '<=': 0.15 },
 					},
 				},
 				{
 					transform: {
 						type: 'filter',
-						config: { dimension: 'Weight', '>': 15, '<=': 30 },
+						config: { dimension: 'Weight', '>': 0.15, '<=': 0.3 },
 					},
 				},
 				{
 					transform: {
 						type: 'filter',
-						config: { dimension: 'Weight', '>': 30, '<=': 100 },
+						config: { dimension: 'Weight', '>': 0.3, '<=': 100 },
 					},
 				},
 			],
@@ -95,7 +108,9 @@ class FirstFsGraph extends FsGraph {
 			tooltip: {
 				position: 'top',
 				formatter: function ({ value }) {
-					return `insert break point: ${value[0]}m<br> confidence: ${value[2]}%<br>`;
+					const type =
+						value[4]?.length > 0 ? `adv insertion type: ${value[4].join()}` : '';
+					return `insert break point: ${value[0]}m<br> weight: ${value[2]}<br>${type}`;
 				},
 			},
 

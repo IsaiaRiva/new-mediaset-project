@@ -32,7 +32,7 @@ export const fgTabs = () => {
 	const tabs = `<ul class="nav nav-pills">
     <li class="nav-item">
       <div class="btn-group ml-2">
-        <button type="button" class="btn btn-danger">use cases</button>
+        <button type="button" id="dropdown-uc-label" class="btn btn-danger">Use Cases</button>
         <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
           <span class="sr-only">Toggle Dropdown</span>
         </button>
@@ -43,7 +43,7 @@ export const fgTabs = () => {
     </li>
     <li class="nav-item d-none" id="dropdown-clients">
       <div class="btn-group ml-2">
-        <button type="button" class="btn btn-info">solutions by</button>
+        <button type="button" class="btn btn-info" id="dropdown-client-label">Amazon</button>
         <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
           <span class="sr-only">Toggle Dropdown</span>
         </button>
@@ -78,10 +78,30 @@ export const fgTabs = () => {
 		document.querySelectorAll('#fs-dropdown-menu-service button.dropdown-item') ||
 		[];
 	const defaultMenu = document.querySelector('.fs-default-menu');
+	const dropdownUSLabel = document.getElementById('dropdown-uc-label');
+	const dropdownClientLabel = document.getElementById('dropdown-client-label');
 
+	// get default menu index
+	const getIndex = value => {
+		const index = Array.from(defaultMenu.childNodes)
+			.map(n => n.outerText)
+			.map((n, i) => {
+				if (n.includes(value)) {
+					return i;
+				}
+				return null;
+			})
+			.filter(n => n !== null)[0];
+		console.log(`🧊 ~ index: `, index);
+		return index;
+	};
+
+	// us listener
 	dropdownElementListUS?.addEventListener('click', ({ target }) => {
 		const us = target.getAttribute('use-case');
 		dropdownClientsItem.classList.add('d-none');
+		dropdownUSLabel.innerText = target.innerText;
+		console.log(`🧊 ~ target: `, target);
 
 		Array.from(dropdownElementListUSBtns).map((x, i) => {
 			if (i === us - 1) {
@@ -97,6 +117,7 @@ export const fgTabs = () => {
 				getUseCaseTab()?.classList.remove('d-none');
 				dropdownClientsItem.classList.remove('d-none');
 				Array.from(dropdownElementListServiceBtns).map((x, i) => {
+					dropdownClientLabel.innerText = 'Amazon';
 					if (i === 0) {
 						x.classList.add('active');
 						return;
@@ -108,24 +129,40 @@ export const fgTabs = () => {
 			case '2':
 				getStatTab()?.classList.remove('d-none');
 				getUseCaseTab()?.classList.add('d-none');
-				defaultMenu.childNodes[2].childNodes[0].click();
+				defaultMenu.childNodes[
+					getIndex('Custom label (Medias...)')
+				]?.childNodes[0].click();
 				break;
 			case '3':
 				window.open('https://ddiep5hcz5y57.cloudfront.net/', '_blank');
-				removeIntoUserCaseTab()
+				getStatTab()?.classList.add('d-none');
+				getUseCaseTab()?.classList.remove('d-none');
+				removeIntoUserCaseTab();
 				break;
 			case '4':
 				getStatTab()?.classList.remove('d-none');
 				getUseCaseTab()?.classList.add('d-none');
-				defaultMenu.childNodes[5].childNodes[0].click();
+				defaultMenu.childNodes[getIndex('Celebrity')]?.childNodes[0].click();
+				break;
+			case '8':
+				getStatTab()?.classList.remove('d-none');
+				getUseCaseTab()?.classList.add('d-none');
+				defaultMenu.childNodes[getIndex('Label')]?.childNodes[0].click();
+				break;
+			case '9':
+				getStatTab()?.classList.add('d-none');
+				getUseCaseTab()?.classList.remove('d-none');
+				createFirstGraph({ useCase: us, client: 'AdvInsertion' });
 				break;
 			default:
 				console.log(`🧊 ~ uses case selected but not bind yet:`, us);
 		}
 	});
 
+	// client listener
 	dropdownElementListService?.addEventListener('click', ({ target }) => {
 		const client = target.getAttribute('use-case');
+		dropdownClientLabel.innerText = target.innerText;
 		Array.from(dropdownElementListServiceBtns).map((x, i) => {
 			if (i === client - 1) {
 				x.classList.add('active');
