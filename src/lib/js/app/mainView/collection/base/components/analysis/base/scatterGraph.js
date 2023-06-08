@@ -21,7 +21,7 @@ export default class ScatterGraph extends mxReadable(class {}) {
 					return {
 						...rest,
 						data: data.map(({ details, ...rest }) => {
-							return { ...rest, details: details.filter(({ c }) => c >= confidence || 60) };
+							return { ...rest, details: details.filter(({ c }) => c >= confidence) };
 						}),
 					};
 				})
