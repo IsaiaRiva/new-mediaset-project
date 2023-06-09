@@ -13,10 +13,15 @@ const CONSTANT = {
 		options: [
 			{ label: 'Amazon', value: 1, classes: ['active'] },
 			{ label: 'CTS', value: 2 },
-			{ label: 'Microsoft', value: 3 },
 			{ label: 'Amazon Simplify', value: 4 },
 		],
 	},
+	useCaseExternal: {
+		options: [
+			{label: 'AWS - Live Demo', value: 0, link: 'https://ddiep5hcz5y57.cloudfront.net/'},
+			{label: 'Cedat 85', value: 1, link: 'https://www.magnetofono.it/streaming/mediaset'},
+		]
+	}
 };
 
 export const C = Object.freeze(CONSTANT);

@@ -28,6 +28,7 @@ export const fgTabs = () => {
 
 	const dropdownClients = map(C.serviceDropDown.options);
 	const dropdownUS = map(C.dropDownData.options);
+	const dropdownLink = map(C.useCaseExternal.options);
 
 	const tabs = `<ul class="nav nav-pills">
     <li class="nav-item">
@@ -49,6 +50,17 @@ export const fgTabs = () => {
         </button>
         <div class="dropdown-menu" id="fs-dropdown-menu-service">
           ${dropdownClients} 
+        </div>
+      </div>
+    </li>
+    <li class="nav-item d-none" id="dropdown-link">
+      <div class="btn-group ml-2">
+        <button type="button" class="btn btn-info" id="dropdown-link-label">Links</button>
+        <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu" id="fs-dropdown-menu-service">
+          ${dropdownLink} 
         </div>
       </div>
     </li>
@@ -80,6 +92,7 @@ export const fgTabs = () => {
 	const defaultMenu = document.querySelector('.fs-default-menu');
 	const dropdownUSLabel = document.getElementById('dropdown-uc-label');
 	const dropdownClientLabel = document.getElementById('dropdown-client-label');
+	const dropdownLinkHTML = document.getElementById('dropdown-link');
 
 	// get default menu index
 	const getIndex = value => {
@@ -100,6 +113,7 @@ export const fgTabs = () => {
 	dropdownElementListUS?.addEventListener('click', ({ target }) => {
 		const us = target.getAttribute('use-case');
 		dropdownClientsItem.classList.add('d-none');
+		dropdownLinkHTML.classList.add('d-none');
 		dropdownUSLabel.innerText = target.innerText;
 		console.log(`🧊 ~ target: `, target);
 
@@ -134,10 +148,10 @@ export const fgTabs = () => {
 				]?.childNodes[0].click();
 				break;
 			case '3':
-				window.open('https://ddiep5hcz5y57.cloudfront.net/', '_blank');
 				getStatTab()?.classList.add('d-none');
 				getUseCaseTab()?.classList.remove('d-none');
 				removeIntoUserCaseTab();
+				dropdownLinkHTML.classList.remove('d-none');
 				break;
 			case '4':
 				getStatTab()?.classList.remove('d-none');
@@ -177,5 +191,9 @@ export const fgTabs = () => {
 			useCase: 1,
 			client: C.serviceDropDown.options[client - 1].label,
 		});
+	});
+	dropdownLinkHTML?.addEventListener('click', ({ target }) => {
+		const link = target.getAttribute('use-case');
+		window.open(C.useCaseExternal.options[link].link, '_blank');
 	});
 };

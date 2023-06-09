@@ -29,6 +29,7 @@ module.exports = merge(common, {
         { from: path.resolve(__dirname, "../../third_party"), to: "third_party" },
         { from: path.resolve(__dirname, "../../css"), to: "css" },
         { from: path.resolve(__dirname, "../../images"), to: "images" },
+        { from: path.resolve(__dirname, "../../video"), to: "video" },
       ],
     }),
   ],

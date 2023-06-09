@@ -452,8 +452,7 @@ export default class VideoPreview extends BasePreview {
 			return this.advVideo;
 		}
 		this.advVideo = document.createElement('video');
-		this.advVideo.src =
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4';
+		this.advVideo.src = '../../../../../../../video/adv.mp4';
 		this.advVideo.classList.add('adv-video', 'd-none');
 		this.advVideo.setAttribute('controls', true);
 		this.advVideo.onended = e => {
