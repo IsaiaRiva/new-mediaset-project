@@ -189,7 +189,7 @@ export const fgTabs = () => {
 		console.log(`🧊 ~ C.serviceDropDown.options: `, client - 1);
 		createFirstGraph({
 			useCase: 1,
-			client: C.serviceDropDown.options[client - 1].label,
+			client: C.serviceDropDown.options[client - 1]?.label,
 		});
 	});
 	dropdownLinkHTML?.addEventListener('click', ({ target }) => {

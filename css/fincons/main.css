@@ -12,7 +12,7 @@
   background-color: var(--depa);
 }
 
-.fs-login-icon, .fs-login-btn, .fs-tab-list .nav-link, .fs-forgot-password {
+.fs-login-icon, .fs-tab-list .nav-link, .fs-forgot-password {
   color: var(--leo) !important;
 }
 

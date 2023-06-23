@@ -4,6 +4,7 @@ const getMinAndRound = v => Math.round((v / 1000 / 60) * 100) / 100;
 const getPercentage = v => Math.round(v * 100 * 100) / 100;
 class FirstFsGraph extends FsGraph {
 	combineDataMaker(data, client) {
+		console.log(`🧊 ~ client: `, client);
 		if (client === 'Amazon') {
 			const { pauseBreaks } = data;
 			const shots = pauseBreaks.map(({ shots }) => shots);
@@ -29,14 +30,17 @@ class FirstFsGraph extends FsGraph {
 		const _breaks = breaks.map(v => getMinAndRound(v));
 		const weights = data.map(({ weight }) => weight);
 		const _weight = weights.map(v => v);
+
 		if (client === 'AdvInsertion') {
 			const cta = data
 				.map(({ content_tailored_adv }) => content_tailored_adv)
 				.map(v => Array.from(new Set(v.map(({ catmerc }) => catmerc))));
 			console.log(`🧊 ~ _cta: `, cta);
-			return _breaks.map((b, i) => {
+			const result = _breaks.map((b, i) => {
 				return [b, 1, _weight[i], breaks[i], cta[i]];
-			});
+			}).filter(x => x[4].length > 0) 
+			console.log(`🧊 ~ result: `, result);
+			return result;
 		}
 
 		return _breaks.map((b, i) => {

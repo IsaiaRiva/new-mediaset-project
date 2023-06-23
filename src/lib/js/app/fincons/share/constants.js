@@ -13,7 +13,7 @@ const CONSTANT = {
 		options: [
 			{ label: 'Amazon', value: 1, classes: ['active'] },
 			{ label: 'CTS', value: 2 },
-			{ label: 'Amazon Simplify', value: 4 },
+			{ label: 'Amazon Simplify', value: 3 },
 		],
 	},
 	useCaseExternal: {
